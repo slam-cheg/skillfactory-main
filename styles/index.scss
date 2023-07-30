@@ -1,0 +1,865 @@
+@import "../fonts/index.scss";
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "heliosexBOLD-neuemachina", Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+section {
+	margin-bottom: 60px;
+}
+
+.outer-wrapper {
+	background: #b5e916;
+	padding-top: 50px;
+}
+
+.inner-wrapper {
+	width: 1160px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.columns {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 0.8fr;
+	margin-top: 50px;
+}
+
+.main__bottom-border {
+	background-image: url(../images/main-bb.svg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	top: -1px;
+	display: flex;
+	margin: 0 auto;
+	height: 40px;
+	width: 1160px;
+}
+
+.title {
+	color: #181818;
+	font-size: 80px;
+	line-height: 0.9;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+.h2-title {
+	color: #181818;
+	font-size: 64px;
+	line-height: 1;
+	font-weight: 400;
+	max-width: 770px;
+	margin-bottom: 20px;
+}
+
+.block-lead {
+	color: #181818;
+	font-size: 24px;
+	line-height: 1.2;
+	font-weight: 400;
+	opacity: 0.7;
+	max-width: 600px;
+	margin-bottom: 40px;
+}
+
+.list {
+	list-style: none;
+	margin-bottom: 50px;
+
+	&-item {
+		color: #181818;
+		font-size: 24px;
+		line-height: 1.4;
+		font-weight: 400;
+	}
+}
+
+.directions {
+	margin-bottom: 50px;
+	&__title {
+		color: #181818;
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+
+	&__list {
+		list-style: none;
+		display: flex;
+		gap: 15px;
+		flex-wrap: wrap;
+	}
+
+	&__list-link {
+		display: flex;
+		flex-wrap: nowrap;
+		background: #fff;
+		padding: 15px;
+		border-radius: 4px;
+		align-items: center;
+		justify-content: center;
+		transition: 0.1s linear;
+		text-decoration: none;
+		color: #033932;
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 400;
+
+		&:hover {
+			background: #dde6e7;
+			transition: 0.1s linear;
+
+			svg path {
+				fill: #043933;
+				transition: 0.1s linear;
+			}
+		}
+
+		&_green {
+			background: #033932;
+			color: #fff;
+
+			&:hover {
+				background: #00594f;
+			}
+		}
+	}
+}
+
+.main__pic {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	top: 15px;
+
+	img {
+		position: relative;
+	}
+
+	svg {
+		position: absolute;
+		top: -30px;
+	}
+}
+
+.cards {
+	margin: 0 0 26px 0 !important;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
+	list-style: none;
+	width: 100%;
+
+	@media screen and (max-width: 959px) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media screen and (max-width: 639px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 467px;
+	border-radius: 4px;
+	overflow: hidden;
+
+	img {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		z-index: 2;
+	}
+
+	svg {
+		position: absolute;
+		z-index: 1;
+		transform: translateY(10px);
+		transition: 0.1s;
+	}
+
+	&__link {
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+		color: #033932;
+		position: relative;
+		z-index: 3;
+		transition: 0.1s;
+	}
+
+	&__title {
+		font-size: 32px;
+		line-height: 0.9;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+
+	&__dates {
+		display: flex;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+		gap: 8px;
+		margin-bottom: 10px;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&__label {
+		color: #181818;
+		font-size: 14px;
+		font-family: "heliosexBOLD-neuemachina", Arial, sans-serif;
+		line-height: 1.55;
+		font-weight: 400;
+		border-radius: 4px;
+		background-color: #033932;
+		padding: 3px 10px;
+		transition: 0.1s;
+	}
+
+	&__prices {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 4px;
+	}
+
+	&__old-price {
+		font-size: 14px;
+		text-decoration: line-through;
+		line-height: 1.2;
+		font-weight: 400;
+		transition: 0.1s;
+	}
+
+	&__current-price {
+		font-size: 32px;
+		line-height: 0.9;
+		font-weight: 400;
+	}
+
+	&__installment {
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+	}
+}
+
+.card_dark {
+	.card__link {
+		color: #fffaed;
+	}
+	.card__label {
+		background-color: #fffaed;
+	}
+}
+
+#it-specialist-proforientaciya {
+	background: #043933;
+	transition: 0.1s;
+
+	&:hover {
+		background: #b5e916;
+		transition: 0.1s;
+
+		.card__link {
+			color: #033932;
+			transition: 0.1s;
+		}
+
+		.card__label {
+			background: #033932;
+			color: #fffaed;
+			transition: 0.1s;
+		}
+
+		.card__old-price {
+			color: #718f8d;
+			transition: 0.1s;
+		}
+	}
+}
+
+#data-analyst {
+	background: #fffaed;
+	transition: 0.1s;
+
+	.card__old-price {
+		color: #718f8d;
+	}
+
+	img {
+		width: 300px;
+		height: 300px;
+		bottom: 37px;
+		right: 0;
+	}
+
+	#svg-one {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#svg-two {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&:hover {
+		background: #ffe040;
+		transition: 0.1s;
+
+		#svg-one {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		#svg-two {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+#data-science {
+	background: #ffe040;
+	transition: 0.1s;
+
+	.card__old-price {
+		color: #718f8d;
+	}
+
+	img {
+		width: 260px;
+		height: 260px;
+		bottom: 50px;
+		right: 20px;
+	}
+
+	#svg-one {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#svg-two {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&:hover {
+		background: #dde6e7;
+		transition: 0.1s;
+
+		#svg-one {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		#svg-two {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+#uxui-pro {
+	background: #fdcbd6;
+	transition: 0.1s;
+
+	.card__old-price {
+		color: #718f8d;
+	}
+
+	img {
+		width: 300px;
+		height: 350px;
+		top: 12px;
+		left: 22px;
+	}
+
+	#contented {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#contented-hover {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	#svg-one {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#svg-two {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&:hover {
+		background: #181818;
+		transition: 0.1s;
+
+		.card__link {
+			color: #fffaed;
+			transition: 0.1s;
+		}
+
+		.card__label {
+			background: #fffaed;
+			color: #fffaed;
+			transition: 0.1s;
+		}
+
+		#contented {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		#contented-hover {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		#svg-one {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		#svg-two {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+#python {
+	background: #dde6e7;
+	transition: 0.1s;
+
+	.card__old-price {
+		color: #718f8d;
+	}
+
+	img {
+		width: 387px;
+		height: 387px;
+		bottom: 0;
+		right: 0;
+	}
+
+	#svg-one {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#svg-two {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&:hover {
+		background: #ff6945;
+		transition: 0.1s;
+
+		.card__link {
+			color: #fffaed;
+			transition: 0.1s;
+		}
+
+		.card__label {
+			background: #fffaed;
+			color: #fffaed;
+			transition: 0.1s;
+		}
+
+		#svg-one {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		#svg-two {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+#white-hacker {
+	background: #fffaed;
+	transition: 0.1s;
+
+	.card__old-price {
+		color: #718f8d;
+	}
+
+	img {
+		width: 100%;
+		bottom: 130px;
+	}
+
+	#svg-one {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#svg-two {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&:hover {
+		background: #043933;
+		transition: 0.1s;
+
+		.card__link {
+			color: #fffaed;
+			transition: 0.1s;
+		}
+
+		.card__label {
+			background: #fffaed;
+			color: #fffaed;
+			transition: 0.1s;
+		}
+
+		#svg-one {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		#svg-two {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.courses__all-link {
+	color: #033932;
+	font-size: 32px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-decoration: none;
+	padding-bottom: 5px;
+	transition: 0.2s;
+
+	span {
+		border-bottom: 2px solid #033932;
+	}
+
+	&:hover {
+		transition: 0.2s;
+		opacity: 0.8;
+	}
+}
+
+.warranty {
+	&__bg {
+		background: #b5e916;
+		border-radius: 8px;
+		padding: 30px 30px 50px 30px;
+	}
+
+	&__top {
+		position: relative;
+	}
+
+	&__title {
+		color: #181818;
+		font-size: 48px;
+		line-height: 0.9;
+		font-weight: 400;
+		margin-bottom: 30px;
+		max-width: 700px;
+	}
+
+	&__label {
+		background: url(../images/warranty-label.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		transform: rotate(6deg);
+		width: 300px;
+		height: 120px;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fffaed;
+		font-size: 32px;
+		line-height: 0.93;
+		font-weight: 400;
+		right: 0;
+		top: -50px;
+	}
+
+	&__columns {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 40px;
+		margin-bottom: 120px;
+	}
+
+	&__col-title {
+		color: #181818;
+		font-size: 32px;
+		line-height: 0.9;
+		font-weight: 400;
+		max-width: 90%;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		color: #181818;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 400;
+	}
+
+	&__bottom {
+		display: flex;
+		position: relative;
+	}
+
+	&__link {
+		color: #fffaed;
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 400;
+		border-width: 0px;
+		border-radius: 3px;
+		background: #033932;
+		text-decoration: none;
+		color: #fffaed;
+		padding: 20px 120px;
+		transition: 0.2s;
+
+		&:hover {
+			background: #00594f;
+			transition: 0.2s;
+		}
+	}
+
+	&__bottom-img {
+		position: absolute;
+		background: url(../images/warranty-umbrella.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		width: 366px;
+		height: 255px;
+		bottom: -50px;
+		right: 90px;
+	}
+}
+
+.business {
+	&__columns {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 60px;
+		margin-bottom: 50px;
+	}
+
+	&__lead {
+		color: #181818;
+		font-size: 32px;
+		line-height: 1.2;
+		font-weight: 400;
+		max-width: 90%;
+	}
+
+	&__list {
+		list-style: none;
+		max-width: 80%;
+	}
+
+	&__list-item {
+		color: #181818;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 400;
+		opacity: 0.7;
+		padding-left: 7px;
+
+		&::marker {
+			content: "→";
+		}
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+	}
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 15px;
+	}
+
+	&__card-logo {
+		width: 90%;
+		max-height: 73px;
+		margin-bottom: 40px;
+	}
+
+	&__card-label {
+		width: fit-content;
+		padding: 8px;
+		color: #ffffff;
+		font-size: 20px;
+		line-height: 1;
+		font-weight: 400;
+		border-radius: 3px;
+		margin-bottom: 20px;
+	}
+
+	&__card-text {
+		color: #181818;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 400;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	#grey {
+		border-radius: 5px;
+		border: 2px solid #a2c1c4;
+
+		.business__card-label {
+			background: #a2c1c4;
+		}
+
+		a {
+			color: #a2c1c4;
+		}
+	}
+
+	#green {
+		border-radius: 5px;
+		border: 2px solid #b5e916;
+
+		.business__card-label {
+			background: #b5e916;
+		}
+
+		a {
+			color: #b5e916;
+		}
+	}
+
+	#pink {
+		border-radius: 5px;
+		border: 2px solid #fdcbd6;
+
+		.business__card-label {
+			background: #fdcbd6;
+		}
+
+		a {
+			color: #fdcbd6;
+		}
+	}
+}
+
+.employer-reviews {
+	overflow: hidden;
+    
+	.swiper {
+		overflow: visible !important;
+	}
+	&__slide {
+		display: flex;
+		border-radius: 4px;
+		background-color: #fffaed;
+		gap: 20px;
+	}
+
+	&__left {
+		img {
+			border-radius: 4px;
+			height: 100%;
+		}
+	}
+
+	&__right {
+		padding: 30px 30px 30px 0;
+	}
+
+	&__logo {
+		margin-bottom: 30px;
+		max-height: 87px;
+	}
+
+	&__text {
+		color: #181818;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 400;
+		margin-bottom: 30px;
+	}
+
+	&__text_grey {
+		opacity: 0.7;
+	}
+
+	&__buttons {
+		position: absolute;
+		z-index: 2;
+		right: 0;
+		top: 72px;
+		display: flex;
+		gap: 10px;
+	}
+
+	&__button {
+		width: 40px;
+		height: 40px;
+		background-image: url(https://static.tildacdn.com/tild6430-6532-4461-b164-346166623365/f0ac3312-51d0-4886-8.svg);
+		background-size: 14px;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 50px;
+		background-color: #dde5e6;
+		transition: 0.2s;
+		cursor: pointer;
+
+		&:hover {
+			transition: 0.2s;
+			opacity: 0.7;
+		}
+	}
+
+	&__button_next {
+		background-image: url(https://static.tildacdn.com/tild6638-3034-4966-b231-653237633464/57b32d26-691b-43ad-8.svg);
+		background-color: #033932;
+	}
+}

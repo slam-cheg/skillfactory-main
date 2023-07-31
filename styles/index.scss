@@ -8,7 +8,7 @@
 }
 
 section {
-	margin-bottom: 60px;
+	margin-bottom: 100px;
 }
 
 .outer-wrapper {
@@ -557,7 +557,7 @@ section {
 	}
 }
 
-.courses__all-link {
+.all-link {
 	color: #033932;
 	font-size: 32px;
 	line-height: 1.2;
@@ -792,21 +792,26 @@ section {
 
 .employer-reviews {
 	overflow: hidden;
-    
+
 	.swiper {
 		overflow: visible !important;
 	}
 	&__slide {
-		display: flex;
+		display: grid;
 		border-radius: 4px;
 		background-color: #fffaed;
 		gap: 20px;
+		grid-template-columns: 1fr 1.6fr;
 	}
 
 	&__left {
+		width: 100%;
+
 		img {
 			border-radius: 4px;
 			height: 100%;
+			width: 100%;
+			object-fit: cover;
 		}
 	}
 
@@ -829,8 +834,11 @@ section {
 
 	&__text_grey {
 		opacity: 0.7;
+		margin-bottom: 0;
 	}
+}
 
+.pagination {
 	&__buttons {
 		position: absolute;
 		z-index: 2;
@@ -861,5 +869,401 @@ section {
 	&__button_next {
 		background-image: url(https://static.tildacdn.com/tild6638-3034-4966-b231-653237633464/57b32d26-691b-43ad-8.svg);
 		background-color: #033932;
+	}
+}
+
+.free-materials {
+	overflow: hidden;
+
+	.all-link {
+		font-size: 24px;
+	}
+
+	.h2-title {
+		max-width: 800px;
+	}
+
+	&__wrapper {
+		margin-bottom: 30px;
+	}
+
+	&__slide {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	#grey {
+		.free-materials__pre-card {
+			color: #a2c1c4;
+		}
+		.free-materials__card {
+			border-color: #a2c1c4;
+		}
+	}
+	#red {
+		.free-materials__pre-card {
+			color: #ff6845;
+		}
+		.free-materials__card {
+			border-color: #ff6845;
+		}
+	}
+	#green {
+		.free-materials__pre-card {
+			color: #033932;
+		}
+		.free-materials__card {
+			border-color: #033932;
+		}
+	}
+
+	&__pre-card {
+		display: flex;
+		gap: 5px;
+		margin-bottom: 10px;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+	}
+
+	&__card {
+		border: 1px solid;
+		padding: 25px 20px 30px 20px;
+		border-radius: 4px;
+		min-height: 430px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__card-title {
+		color: #033932;
+		font-size: 28px;
+		line-height: 0.9;
+		font-weight: 400;
+		width: 89%;
+	}
+
+	&__card-text {
+		color: #033932;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+	}
+
+	&__card-button {
+		color: #fffaed;
+		font-size: 16px;
+		line-height: 1.55;
+		font-weight: 400;
+		border-radius: 4px;
+		background-color: #033932;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		transition: 0.2s;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #00594f;
+			transition: 0.2s;
+		}
+	}
+}
+
+.carrier {
+	overflow: hidden;
+	margin: 0;
+
+	.outer-wrapper {
+		padding-bottom: 20px;
+	}
+
+	&__label {
+		color: #043933;
+		font-size: 20px;
+		line-height: 1;
+		font-weight: 400;
+		border-radius: 3px;
+		background-color: #ffffff;
+		padding: 10px;
+		width: fit-content;
+		margin-bottom: 30px;
+	}
+
+	&__top {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		margin-bottom: 40px;
+	}
+
+	.h2-title {
+		font-size: 48px;
+		margin-bottom: 0;
+	}
+
+	&__more {
+		div {
+			background: url(https://static.tildacdn.com/tild6533-3438-4536-b064-373966343166/zvezda.svg);
+			width: 23px;
+			height: 23px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			margin-bottom: 10px;
+		}
+		p {
+			color: #181818;
+			font-size: 16px;
+			line-height: 1.2;
+			font-weight: 400;
+			opacity: 0.7;
+			max-width: 50%;
+		}
+
+		a {
+			color: #181818;
+		}
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 40px;
+		row-gap: 70px;
+		margin-bottom: 50px;
+	}
+
+	&__item-title {
+		color: #181818;
+		font-size: 32px;
+		line-height: 0.9;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+
+	&__marquee {
+		animation: marquee-anim;
+		animation-duration: 30s;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		transition-property: linear;
+		animation-timing-function: linear;
+		margin-bottom: 20px;
+
+		.marquee-items {
+			display: flex;
+			gap: 40px;
+			align-items: center;
+		}
+	}
+
+	&__bottom-border {
+		background: url(../images/carrier-border.svg) no-repeat;
+		background-position: top;
+		height: 40px;
+		width: 1160px;
+		margin: 0 auto;
+		background-size: contain;
+	}
+}
+
+@keyframes marquee-anim {
+	0% {
+		transform: translateX(-calc((220px * 6) + (40px * 6)));
+	}
+	100% {
+		transform: translateX(-calc((220px * 12) + (40px * 12)));
+	}
+}
+
+.community {
+	background: #a2c1c4;
+	padding-bottom: 90px;
+
+	.h2-title {
+		color: #033932;
+		font-size: 64px;
+		line-height: 58px;
+		margin-bottom: 10px;
+	}
+
+	&__lead {
+		color: #033932;
+		font-size: 24px;
+		line-height: 29px;
+	}
+
+	&__columns {
+		margin-top: 50px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px;
+	}
+
+	&__left {
+		position: relative;
+	}
+
+	&__photo {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+
+	#photo-one {
+		background-image: url(https://thumb.tildacdn.com/tild6265-3133-4037-b830-646234303566/-/cover/72x72/center/center/-/format/webp/Frame_1321314344.png);
+		top: -80px;
+		left: 90px;
+	}
+
+	#photo-two {
+		background-image: url(https://thumb.tildacdn.com/tild3965-3735-4365-a136-666231393636/-/cover/72x72/center/center/-/format/webp/Group_1321314249.png);
+		top: -70px;
+		left: 310px;
+	}
+
+	#photo-three {
+		background-image: url(https://thumb.tildacdn.com/tild6331-3962-4364-b030-323061656334/-/cover/72x72/center/center/-/format/webp/Frame_1321314342.png);
+		top: 140px;
+		left: 0;
+	}
+
+	#photo-four {
+		background-image: url(https://thumb.tildacdn.com/tild3230-6537-4531-b038-333438656333/-/cover/72x72/center/center/-/format/webp/Mask_group.png);
+		top: 160px;
+		left: 150px;
+	}
+
+	#photo-five {
+		background-image: url(https://thumb.tildacdn.com/tild6137-6563-4665-b935-663031663233/-/cover/72x72/center/center/-/format/webp/Frame_1321314343.png);
+		top: 160px;
+		left: 340px;
+	}
+
+	#photo-six {
+		background-image: url(https://thumb.tildacdn.com/tild3934-3861-4637-a661-663366656665/-/cover/72x72/center/center/-/format/webp/Frame_1321314341.png);
+		top: 250px;
+		left: 70px;
+	}
+
+	#photo-seven {
+		background-image: url(https://thumb.tildacdn.com/tild3062-3039-4830-b530-333162336666/-/cover/72x72/center/center/-/format/webp/Frame_1321314338.png);
+		top: 280px;
+		left: 230px;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		list-style: none;
+		padding-left: 15px;
+	}
+
+	&__list-item {
+		color: #181818;
+		font-size: 20px;
+		line-height: 24px;
+		padding-left: 10px;
+
+		&::marker {
+			content: "→";
+			color: #181818;
+			font-size: 20px;
+		}
+	}
+}
+
+.reviews {
+	overflow: hidden;
+
+	.h2-title {
+		max-width: 900px;
+	}
+
+	&__slide {
+		border-radius: 4px;
+		background: #fffaed;
+		display: grid;
+		gap: 20px;
+		grid-template-columns: 370px auto;
+	}
+
+	&__left {
+		width: 100%;
+		img {
+			border-radius: 4px;
+			height: 420px;
+			width: 100%;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+
+	&__right {
+		padding: 30px 30px 30px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__name {
+		color: #181818;
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		color: #181818;
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+
+	&__course {
+		color: #181818;
+		font-size: 20px;
+		margin-bottom: 10px;
+
+		a {
+			color: #181818;
+			transition: 0.2s;
+
+			&:hover {
+				opacity: 0.7;
+				transition: 0.2s;
+			}
+		}
+	}
+
+	&__job {
+		color: #181818;
+		font-size: 20px;
+	}
+
+	&__link {
+		color: #033932;
+		font-size: 24px;
+	}
+
+	&__link {
+		text-decoration: none;
+		transition: 0.2s;
+
+		span {
+			padding-bottom: 5px;
+			border-bottom: 2px solid #033932;
+		}
+
+		&:hover {
+			opacity: 0.7;
+			transition: 0.2s;
+		}
 	}
 }

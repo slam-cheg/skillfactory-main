@@ -96,7 +96,7 @@ section {
   }
 }
 .main .main__bottom-border {
-  background-image: url(../images/main-bb.svg);
+  background-image: url(https://static.tildacdn.com/tild3361-6130-4664-b465-333763363234/main-bb.svg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1812,6 +1812,7 @@ section {
   grid-template-areas: "title more" "cards cards" "benefits benefits";
   -moz-column-gap: 40px;
        column-gap: 40px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 959px) {
   .carrier__content-wrapper {
@@ -1935,7 +1936,6 @@ section {
 }
 .carrier__marquee .marquee-items {
   display: flex;
-  gap: 40px;
   align-items: center;
 }
 @media screen and (max-width: 639px) {
@@ -1943,13 +1943,21 @@ section {
     gap: 0;
   }
 }
+.carrier__marquee .marquee {
+  height: 100px;
+  width: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
 @media screen and (max-width: 639px) {
   .carrier__marquee .marquee {
     max-width: 180px;
   }
 }
 .carrier__bottom-border {
-  background: url(../images/carrier-border.svg) no-repeat;
+  background: url(https://static.tildacdn.com/tild3034-3233-4733-b964-346566636161/carrier-border.svg) no-repeat;
   background-position: top;
   height: 40px;
   width: 100%;
@@ -1973,10 +1981,10 @@ section {
 
 @keyframes marquee-anim {
   0% {
-    transform: translateX(-1560px);
+    transform: translateX(-2400px);
   }
   100% {
-    transform: translateX(-3120px);
+    transform: translateX(-4800px);
   }
 }
 .community {

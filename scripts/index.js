@@ -1,5 +1,16 @@
 const iframeLayout = `<iframe class="videos__iframe" width="100%" height="100%" frameborder="0" allowfullscreen="" src="" allow="autoplay"></iframe>`;
 const iframeWrappers = document.querySelectorAll(".videos__iframe-wrapper");
+const jobTooltip = document.querySelector("#tooltip-job");
+const refundTooltip = document.querySelector("#tooltip-refund");
+const jobTooltipBtn = document.querySelector("#internship");
+const refundTooltipBtn = document.querySelector("#refund");
+
+jobTooltipBtn.addEventListener("click", () => {
+	openTooltip(jobTooltip);
+});
+refundTooltipBtn.addEventListener("click", () => {
+	openTooltip(refundTooltip);
+});
 
 const employerReviewsSwiper = new Swiper(".employer-reviews__swiper", {
 	loop: false,
@@ -161,3 +172,23 @@ iframeWrappers.forEach((wrapper) => {
 		preview.classList.add("videos__preview_hidden");
 	});
 });
+
+function openTooltip(tooltip) {
+	tooltip.classList.add("warranty__tooltip_visible");
+	setTimeout(() => {
+		window.addEventListener("click", closeTooltipByOverlay);
+	}, 500);
+}
+
+function closeTooltip(tooltip) {
+	tooltip.classList.remove("warranty__tooltip_visible");
+	window.removeEventListener("click", closeTooltipByOverlay);
+}
+
+function closeTooltipByOverlay(event) {
+	if (event.type === "click") {
+		if (event.target !== document.querySelector(".warranty__tooltip")) {
+			closeTooltip(document.querySelector(".warranty__tooltip_visible"));
+		}
+	}
+}

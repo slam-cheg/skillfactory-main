@@ -1,3 +1,6 @@
+const iframeLayout = `<iframe class="videos__iframe" width="100%" height="100%" frameborder="0" allowfullscreen="" src="" allow="autoplay"></iframe>`;
+const iframeWrappers = document.querySelectorAll(".videos__iframe-wrapper");
+
 const employerReviewsSwiper = new Swiper(".employer-reviews__swiper", {
 	loop: false,
 	navigation: {
@@ -5,8 +8,30 @@ const employerReviewsSwiper = new Swiper(".employer-reviews__swiper", {
 		prevEl: "#employer-reviews-prev-btn",
 	},
 	spaceBetween: 40,
-	slidesPerView: 1.12,
 	slideToClickedSlide: true,
+
+	breakpoints: {
+		480: {
+			slidesPerView: 0.4,
+			freeMode: {
+				enabled: true,
+				sticky: false,
+			},
+		},
+		640: {
+			slidesPerView: 0.6,
+		},
+		960: {
+			slidesPerView: 1.15,
+			freeMode: {
+				enabled: false,
+				sticky: true,
+			},
+		},
+		1199: {
+			slidesPerView: 1.12,
+		},
+	},
 });
 
 const freeMaterialsSwiper = new Swiper(".free-materials__swiper", {
@@ -18,6 +43,18 @@ const freeMaterialsSwiper = new Swiper(".free-materials__swiper", {
 	spaceBetween: 20,
 	slidesPerView: 3,
 	slideToClickedSlide: true,
+
+	breakpoints: {
+		480:{
+			slidesPerView: 1.3,
+		},
+		640: {
+			slidesPerView: 2,
+		},
+		960: {
+			slidesPerView: 3,
+		},
+	},
 });
 
 const reviewsSwiper = new Swiper(".reviews__swiper", {
@@ -27,8 +64,26 @@ const reviewsSwiper = new Swiper(".reviews__swiper", {
 		prevEl: "#reviews-prev-btn",
 	},
 	spaceBetween: 40,
-	slidesPerView: 1.12,
 	slideToClickedSlide: true,
+	breakpoints: {
+		640: {
+			slidesPerView: 0.6,
+			freeMode: {
+				enabled: true,
+				sticky: false,
+			},
+		},
+		960: {
+			slidesPerView: 1.15,
+			freeMode: {
+				enabled: false,
+				sticky: true,
+			},
+		},
+		1199: {
+			slidesPerView: 1.12,
+		},
+	},
 });
 
 const videosSwiper = new Swiper(".videos__swiper", {
@@ -38,12 +93,39 @@ const videosSwiper = new Swiper(".videos__swiper", {
 		prevEl: "#videos-next-btn",
 	},
 	spaceBetween: 60,
-	slidesPerView: 4,
 	slideToClickedSlide: false,
+
+	breakpoints: {
+		640: {
+			slidesPerView: 2.4,
+			spaceBetween: 40,
+		},
+		960: {
+			slidesPerView: 4,
+		},
+	},
 });
 
-const iframeLayout = `<iframe class="videos__iframe" width="100%" height="100%" frameborder="0" allowfullscreen="" src="" allow="autoplay"></iframe>`;
-const iframeWrappers = document.querySelectorAll(".videos__iframe-wrapper");
+const mentorsSwiper = new Swiper(".mentors__swiper", {
+	loop: false,
+	navigation: {
+		nextEl: "#mentors-prev-btn",
+		prevEl: "#mentors-next-btn",
+	},
+	spaceBetween: 20,
+
+	slideToClickedSlide: true,
+	breakpoints: {
+		640: {
+			slidesPerView: 1.7,
+			spaceBetween: 40,
+		},
+		960: {
+			slidesPerView: 3,
+		},
+	},
+});
+
 iframeWrappers.forEach((wrapper) => {
 	const playBtn = wrapper.querySelector(".videos__play");
 	const preview = wrapper.querySelector(".videos__preview");
@@ -57,14 +139,3 @@ iframeWrappers.forEach((wrapper) => {
 		preview.classList.add("videos__preview_hidden");
 	});
 });
-
-const mentorsSwiper = new Swiper(".mentors__swiper", {
-	loop: false,
-	navigation: {
-		nextEl: "#mentors-prev-btn",
-		prevEl: "#mentors-next-btn",
-	},
-	spaceBetween: 20,
-	slidesPerView: 3,
-	slideToClickedSlide: true,
-})

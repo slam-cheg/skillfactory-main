@@ -59,6 +59,11 @@ section {
 		font-size: 40px;
 		line-height: 36px;
 	}
+
+	@media screen and (max-width: 439px) {
+		font-size: 30px;
+		line-height: 28px;
+	}
 }
 
 .main {
@@ -107,6 +112,11 @@ section {
 			font-size: 55px;
 			line-height: 50px;
 		}
+
+		@media screen and (max-width: 439px) {
+			font-size: 45px;
+			line-height: 41px;
+		}
 	}
 
 	.block-lead {
@@ -134,6 +144,9 @@ section {
 		@media screen and (max-width: 639px) {
 			margin-bottom: 500px;
 		}
+		@media screen and (max-width: 439px) {
+			margin-bottom: 350px;
+		}
 
 		&-item {
 			color: #181818;
@@ -151,6 +164,10 @@ section {
 
 			@media screen and (max-width: 639px) {
 				font-size: 18px;
+			}
+			@media screen and (max-width: 439px) {
+				font-size: 14px;
+				line-height: 20px;
 			}
 		}
 	}
@@ -170,6 +187,10 @@ section {
 
 			@media screen and (max-width: 639px) {
 				font-size: 18px;
+			}
+			@media screen and (max-width: 439px) {
+				font-size: 14px;
+				line-height: 20px;
 			}
 		}
 
@@ -207,6 +228,12 @@ section {
 
 			@media screen and (max-width: 959px) {
 				font-size: 18px;
+			}
+
+			@media screen and (max-width: 439px) {
+				font-size: 14px;
+				line-height: 1.2;
+				padding: 10px;
 			}
 
 			svg {
@@ -262,6 +289,11 @@ section {
 			margin-left: 25px;
 		}
 
+		@media screen and (max-width: 479px) {
+			margin-left: 0;
+			top: -590px;
+		}
+
 		img {
 			position: relative;
 			max-width: 92%;
@@ -274,6 +306,15 @@ section {
 
 			@media screen and (max-width: 639px) {
 				max-width: 374px;
+			}
+
+			@media screen and (max-width: 479px) {
+				max-width: unset;
+				width: 280px;
+				left: 0;
+				border-radius: 4px;
+				height: 290px;
+				object-fit: cover;
 			}
 		}
 
@@ -295,11 +336,21 @@ section {
 				left: -20px;
 				width: 394px;
 			}
+
+			@media screen and (max-width: 479px) {
+				left: 10px;
+				top: -20px;
+				height: auto;
+				width: 290px;
+			}
 		}
 	}
 }
 
 .courses {
+	@media screen and (max-width: 479px) {
+		margin-bottom: 20px;
+	}
 	.h2-title {
 		@media screen and (max-width: 639px) {
 			margin-bottom: 50px;
@@ -320,6 +371,9 @@ section {
 		@media screen and (max-width: 639px) {
 			grid-template-columns: 1fr;
 		}
+		@media screen and (max-width: 479px) {
+			gap: 10px;
+		}
 	}
 
 	.block-lead {
@@ -333,6 +387,10 @@ section {
 
 		@media screen and (max-width: 1199px) {
 			font-size: 20px;
+		}
+		@media screen and (max-width: 439px) {
+			font-size: 14px;
+			line-height: 18px;
 		}
 	}
 
@@ -478,6 +536,11 @@ section {
 			@media screen and (max-width: 639px) {
 				bottom: -140px;
 			}
+			@media screen and (max-width: 439px) {
+				bottom: -50px;
+				left: 30px;
+				width: 320px;
+			}
 		}
 
 		&:hover {
@@ -523,6 +586,12 @@ section {
 
 			@media screen and (max-width: 639px) {
 				right: 70px;
+			}
+
+			@media screen and (max-width: 439px) {
+				right: 0;
+				width: 250px;
+				bottom: 50px;
 			}
 		}
 
@@ -574,6 +643,12 @@ section {
 			@media screen and (max-width: 639px) {
 				bottom: 40px;
 				right: 100px;
+			}
+
+			@media screen and (max-width: 439px) {
+				bottom: 70px;
+				right: 30px;
+				width: 190px;
 			}
 		}
 
@@ -633,6 +708,12 @@ section {
 				top: 44px;
 				left: 178px;
 			}
+
+			@media screen and (max-width: 479px) {
+				width: 200px;
+				top: 44px;
+				left: 48px;
+			}
 		}
 
 		#contented {
@@ -653,6 +734,13 @@ section {
 				right: -30px;
 				height: 187px;
 				right: -50px;
+			}
+			@media screen and (max-width: 479px) {
+				transform: unset;
+				width: 70%;
+				top: 140px;
+				height: unset;
+				right: unset;
 			}
 		}
 
@@ -777,6 +865,13 @@ section {
 				right: -120px;
 				transform: rotate(90deg);
 			}
+
+			@media screen and (max-width: 479px) {
+				bottom: 50px;
+				right: 0;
+				transform: rotate(0deg);
+				width: 100%;
+			}
 		}
 
 		#svg-one {
@@ -839,10 +934,19 @@ section {
 		font-size: 26px;
 		line-height: 23px;
 	}
+
+	@media screen and (max-width: 479px) {
+		font-size: 18px;
+		line-height: 22px;
+	}
 }
 
 .warranty {
 	overflow: hidden;
+
+	@media screen and (max-width: 439px) {
+		padding-top: 60px;
+	}
 
 	&__bg {
 		background: #b5e916;
@@ -851,6 +955,9 @@ section {
 
 		@media screen and (max-width: 639px) {
 			padding: 20px 20px 40px 20px;
+		}
+		@media screen and (max-width: 439px) {
+			padding: 10px 10px 40px 10px;
 		}
 	}
 
@@ -879,6 +986,12 @@ section {
 			font-size: 32px;
 			max-width: 100%;
 			margin-bottom: 120px;
+		}
+
+		@media screen and (max-width: 439px) {
+			font-size: 26px;
+			line-height: 23px;
+			margin-bottom: 30px;
 		}
 	}
 
@@ -915,6 +1028,12 @@ section {
 		@media screen and (max-width: 639px) {
 			top: 62px;
 			width: 250px;
+		}
+
+		@media screen and (max-width: 439px) {
+			font-size: 18px;
+			top: -80px;
+			width: 200px;
 		}
 	}
 
@@ -958,6 +1077,11 @@ section {
 		@media screen and (max-width: 639px) {
 			font-size: 24px;
 		}
+
+		@media screen and (max-width: 439px) {
+			font-size: 20px;
+			line-height: 18px;
+		}
 	}
 
 	&__text {
@@ -965,6 +1089,10 @@ section {
 		font-size: 16px;
 		line-height: 1.2;
 		font-weight: 400;
+
+		@media screen and (max-width: 439px) {
+			font-size: 14px;
+		}
 	}
 
 	&__bottom {
@@ -976,6 +1104,9 @@ section {
 		}
 		@media screen and (max-width: 639px) {
 			margin-bottom: 130px;
+		}
+		@media screen and (max-width: 479px) {
+			margin-bottom: 110px;
 		}
 	}
 
@@ -1000,6 +1131,10 @@ section {
 		@media screen and (max-width: 639px) {
 			width: 100%;
 			text-align: center;
+		}
+
+		@media screen and (max-width: 479px) {
+			padding: 15px;
 		}
 	}
 
@@ -1033,6 +1168,12 @@ section {
 			height: 200px;
 			right: -30px;
 			bottom: -173px;
+		}
+		@media screen and (max-width: 479px) {
+			width: 275px;
+			height: 183px;
+			right: -34px;
+			bottom: -160px;
 		}
 	}
 }
@@ -1071,6 +1212,11 @@ section {
 			font-size: 18px;
 			line-height: 22px;
 		}
+
+		@media screen and (max-width: 479px) {
+			font-size: 16px;
+			line-height: 20px;
+		}
 	}
 
 	&__list {
@@ -1082,6 +1228,10 @@ section {
 			display: flex;
 			flex-direction: column;
 			gap: 10px;
+		}
+
+		@media screen and (max-width: 479px) {
+			max-width: 100%;
 		}
 	}
 
@@ -1101,6 +1251,11 @@ section {
 			margin-left: 15px;
 		}
 
+		@media screen and (max-width: 639px) {
+			font-size: 14px;
+			line-height: 18px;
+		}
+
 		&::marker {
 			content: "→";
 		}
@@ -1114,6 +1269,10 @@ section {
 
 		@media screen and (max-width: 959px) {
 			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media screen and (max-width: 639px) {
+			grid-template-columns: 1fr;
 		}
 	}
 
@@ -1222,6 +1381,11 @@ section {
 		@media screen and (max-width: 639px) {
 			margin-bottom: 70px;
 		}
+		@media screen and (max-width: 479px) {
+			font-size: 32px;
+			line-height: 1;
+			width: 320px;
+		}
 	}
 
 	.swiper {
@@ -1237,6 +1401,12 @@ section {
 		@media screen and (max-width: 959px) {
 			grid-template-columns: 368px 0.9fr;
 		}
+
+		@media screen and (max-width: 479px) {
+			grid-template-columns: 1fr;
+			padding: 10px;
+			min-height: 425px;
+		}
 	}
 
 	&__left {
@@ -1247,11 +1417,20 @@ section {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
+
+			@media screen and (max-width: 479px) {
+				width: 100px;
+				height: 100px;
+			}
 		}
 	}
 
 	&__right {
 		padding: 30px 30px 30px 0;
+
+		@media screen and (max-width: 479px) {
+			padding: 0;
+		}
 	}
 
 	&__logo {
@@ -1262,6 +1441,10 @@ section {
 			margin-bottom: 20px;
 			max-height: 60px;
 		}
+
+		@media screen and (max-width: 479px) {
+			display: none;
+		}
 	}
 
 	&__text {
@@ -1270,6 +1453,11 @@ section {
 		line-height: 1.2;
 		font-weight: 400;
 		margin-bottom: 30px;
+
+		@media screen and (max-width: 479px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
 	}
 
 	&__text_grey {
@@ -1289,6 +1477,11 @@ section {
 
 		@media screen and (max-width: 639px) {
 			top: 120px;
+		}
+
+		@media screen and (max-width: 479px) {
+			right: unset;
+			left: 0;
 		}
 	}
 
@@ -1325,8 +1518,24 @@ section {
 	overflow: hidden;
 	padding-bottom: 4px;
 
+	.pagination__buttons {
+		@media screen and (max-width: 479px) {
+			display: none;
+		}
+	}
+	.swiper-wrapper {
+		@media screen and (max-width: 479px) {
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+
 	.all-link {
 		font-size: 24px;
+
+		@media screen and (max-width: 479px) {
+			font-size: 18px;
+		}
 	}
 
 	.h2-title {
@@ -1346,6 +1555,11 @@ section {
 		@media screen and (max-width: 639px) {
 			font-size: 40px;
 			line-height: 36px;
+		}
+
+		@media screen and (max-width: 479px) {
+			font-size: 32px;
+			line-height: 29px;
 		}
 	}
 
@@ -1422,6 +1636,11 @@ section {
 			font-size: 26px;
 			min-height: 117px;
 		}
+
+		@media screen and (max-width: 479px) {
+			font-size: 24px;
+			min-height: unset;
+		}
 	}
 
 	&__card-text {
@@ -1475,10 +1694,19 @@ section {
 		@media screen and (max-width: 639px) {
 			font-size: 35px;
 		}
+
+		@media screen and (max-width: 479px) {
+			font-size: 32px;
+			margin-bottom: 30px;
+		}
 	}
 
 	.outer-wrapper {
 		padding-bottom: 20px;
+
+		@media screen and (max-width: 479px) {
+			padding-top: 40px;
+		}
 	}
 
 	&__label {
@@ -1541,6 +1769,10 @@ section {
 
 			@media screen and (max-width: 1199px) {
 				max-width: unset;
+			}
+
+			@media screen and (max-width: 479px) {
+				max-width: 50%;
 			}
 		}
 
@@ -1645,8 +1877,18 @@ section {
 		width: 100%;
 		margin: 0 auto;
 		background-size: contain;
-		top: -1px;
+		top: 0;
 		position: relative;
+		background-color: #a2c1c4;
+
+		@media screen and (max-width: 639px) {
+			width: 1160px;
+			left: -20px;
+		}
+
+		@media screen and (max-width: 479px) {
+			left: -324px;
+		}
 	}
 }
 
@@ -1663,6 +1905,15 @@ section {
 	background: #a2c1c4;
 	padding-bottom: 90px;
 
+	@media screen and (max-width: 479px) {
+		margin-top: -1px;
+		padding-top: 30px;
+	}
+
+	@media screen and (max-width: 479px) {
+		padding-bottom: 60px;
+	}
+
 	.h2-title {
 		color: #033932;
 		font-size: 64px;
@@ -1676,6 +1927,14 @@ section {
 		@media screen and (max-width: 959px) {
 			font-size: 50px;
 		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 45px;
+		}
+
+		@media screen and (max-width: 479px) {
+			font-size: 40px;
+		}
 	}
 
 	&__lead {
@@ -1687,10 +1946,18 @@ section {
 			font-size: 22px;
 			line-height: 24px;
 		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 20px;
+			line-height: 22px;
+		}
+
+		@media screen and (max-width: 479px) {
+			font-size: 18px;
+		}
 	}
 
 	&__columns {
-		margin-top: 50px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 40px;
@@ -1698,6 +1965,10 @@ section {
 		@media screen and (max-width: 959px) {
 			grid-template-columns: 1fr;
 			gap: 170px;
+		}
+
+		@media screen and (max-width: 479px) {
+			gap: 130px;
 		}
 	}
 
@@ -1712,18 +1983,41 @@ section {
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center;
+
+		@media screen and (max-width: 479px) {
+			width: 40px;
+			height: 40px;
+		}
 	}
 
 	#photo-one {
 		background-image: url(https://thumb.tildacdn.com/tild6265-3133-4037-b830-646234303566/-/cover/72x72/center/center/-/format/webp/Frame_1321314344.png);
 		top: -80px;
 		left: 90px;
+
+		@media screen and (max-width: 639px) {
+			top: -60px;
+			left: 230px;
+		}
+
+		@media screen and (max-width: 479px) {
+			left: 110px;
+		}
 	}
 
 	#photo-two {
 		background-image: url(https://thumb.tildacdn.com/tild3965-3735-4365-a136-666231393636/-/cover/72x72/center/center/-/format/webp/Group_1321314249.png);
 		top: -70px;
 		left: 310px;
+
+		@media screen and (max-width: 639px) {
+			top: 30px;
+			left: 400px;
+		}
+		@media screen and (max-width: 479px) {
+			top: 120px;
+			left: 170px;
+		}
 	}
 
 	#photo-three {
@@ -1734,6 +2028,10 @@ section {
 		@media screen and (max-width: 959px) {
 			left: 10px;
 		}
+
+		@media screen and (max-width: 479px) {
+			left: -10px;
+		}
 	}
 
 	#photo-four {
@@ -1743,6 +2041,15 @@ section {
 
 		@media screen and (max-width: 959px) {
 			left: 280px;
+		}
+
+		@media screen and (max-width: 639px) {
+			left: 370px;
+			top: 210px;
+		}
+		@media screen and (max-width: 479px) {
+			left: 260px;
+			top: 130px;
 		}
 	}
 
@@ -1756,6 +2063,15 @@ section {
 			right: 40px;
 			left: unset;
 		}
+
+		@media screen and (max-width: 639px) {
+			top: 590px;
+			right: -10px;
+		}
+
+		@media screen and (max-width: 479px) {
+			top: 230px;
+		}
 	}
 
 	#photo-six {
@@ -1766,6 +2082,15 @@ section {
 		@media screen and (max-width: 959px) {
 			top: 220px;
 			left: 120px;
+		}
+
+		@media screen and (max-width: 639px) {
+			top: 180px;
+			left: 170px;
+		}
+
+		@media screen and (max-width: 479px) {
+			left: 90px;
 		}
 	}
 
@@ -1779,6 +2104,16 @@ section {
 			right: 20px;
 			left: unset;
 		}
+
+		@media screen and (max-width: 639px) {
+			top: 630px;
+			left: 0px;
+		}
+
+		@media screen and (max-width: 479px) {
+			top: 0px;
+			left: 260px;
+		}
 	}
 
 	&__list {
@@ -1791,6 +2126,11 @@ section {
 		@media screen and (max-width: 959px) {
 			max-width: 60%;
 		}
+
+		@media screen and (max-width: 479px) {
+			max-width: 100%;
+			gap: 10px;
+		}
 	}
 
 	&__list-item {
@@ -1802,6 +2142,17 @@ section {
 		@media screen and (max-width: 1199px) {
 			font-size: 18px;
 			line-height: 22px;
+		}
+
+		@media screen and (max-width: 479px) {
+			line-height: 19px;
+			font-size: 16px;
+		}
+
+		&:first-of-type {
+			@media screen and (max-width: 479px) {
+				max-width: 80%;
+			}
 		}
 
 		&::marker {
@@ -1821,6 +2172,19 @@ section {
 
 	.h2-title {
 		max-width: 900px;
+
+		@media screen and (max-width: 639px) {
+			margin-bottom: 80px;
+		}
+		@media screen and (max-width: 479px) {
+			font-size: 32px;
+		}
+	}
+
+	.pagination__buttons {
+		@media screen and (max-width: 639px) {
+			top: 90px;
+		}
 	}
 
 	&__slide {
@@ -1829,6 +2193,11 @@ section {
 		display: grid;
 		gap: 20px;
 		grid-template-columns: 370px auto;
+
+		@media screen and (max-width: 479px) {
+			grid-template-columns: 1fr;
+			padding: 10px;
+		}
 	}
 
 	&__left {
@@ -1839,6 +2208,11 @@ section {
 			width: 100%;
 			object-fit: cover;
 			object-position: top;
+
+			@media screen and (max-width: 479px) {
+				width: 100px;
+				height: 120px;
+			}
 		}
 	}
 
@@ -1847,6 +2221,16 @@ section {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+
+		@media screen and (max-width: 479px) {
+			padding: 0;
+		}
+	}
+
+	&__content {
+		@media screen and (max-width: 479px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__name {
@@ -1854,6 +2238,11 @@ section {
 		font-size: 20px;
 		line-height: 24px;
 		margin-bottom: 20px;
+
+		@media screen and (max-width: 479px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
 	}
 
 	&__title {
@@ -1864,12 +2253,21 @@ section {
 		@media screen and (max-width: 959px) {
 			font-size: 30px;
 		}
+		@media screen and (max-width: 479px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
 	}
 
 	&__course {
 		color: #181818;
 		font-size: 20px;
 		margin-bottom: 10px;
+
+		@media screen and (max-width: 479px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
 
 		a {
 			color: #181818;
@@ -1885,14 +2283,16 @@ section {
 	&__job {
 		color: #181818;
 		font-size: 20px;
+
+		@media screen and (max-width: 479px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
 	}
 
 	&__link {
 		color: #033932;
 		font-size: 24px;
-	}
-
-	&__link {
 		text-decoration: none;
 		transition: 0.2s;
 
@@ -1905,6 +2305,15 @@ section {
 			opacity: 0.7;
 			transition: 0.2s;
 		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 20px;
+		}
+
+		@media screen and (max-width: 479px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
 	}
 }
 
@@ -1915,6 +2324,11 @@ section {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 40px;
+
+		@media screen and (max-width: 639px) {
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+		}
 	}
 
 	&__column {
@@ -1930,6 +2344,10 @@ section {
 
 		@media screen and (max-width: 1199px) {
 			font-size: 55px;
+		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 50px;
 		}
 	}
 
@@ -1992,6 +2410,10 @@ section {
 
 		@media screen and (max-width: 1199px) {
 			height: 370px;
+		}
+
+		@media screen and (max-width: 639px) {
+			height: 420px;
 		}
 	}
 
@@ -2067,6 +2489,10 @@ section {
 		@media screen and (max-width: 959px) {
 			top: 120px;
 		}
+
+		@media screen and (max-width: 479px) {
+			top: 150px;
+		}
 	}
 
 	.h2-title {
@@ -2081,12 +2507,31 @@ section {
 			line-height: 41px;
 			margin-bottom: 70px;
 		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 32px;
+			line-height: 36px;
+		}
+
+		@media screen and (max-width: 439px) {
+			line-height: 29px;
+			width: 320px;
+			margin-bottom: 90px;
+		}
 	}
 
 	&__slide {
 		display: flex;
 		flex-direction: column;
 		height: 400px;
+
+		@media screen and (max-width: 639px) {
+			height: 390px;
+		}
+
+		@media screen and (max-width: 439px) {
+			height: 360px;
+		}
 	}
 
 	&__slide#grey {
@@ -2106,17 +2551,36 @@ section {
 		gap: 15px;
 		padding: 20px;
 		margin-bottom: 40px;
+
+		@media screen and (max-width: 639px) {
+			padding: 30px 20px;
+		}
+
+		@media screen and (max-width: 439px) {
+			padding: 30px 10px 40px 10px;
+			margin-bottom: 0;
+		}
 	}
 
 	&__name {
 		font-size: 32px;
 		line-height: 29px;
 		font-weight: 400;
+
+		@media screen and (max-width: 639px) {
+			font-size: 26px;
+			line-height: 23px;
+		}
 	}
 
 	&__carrier {
 		font-size: 18px;
 		font-weight: 400;
+
+		@media screen and (max-width: 639px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
 	}
 }
 
@@ -2131,11 +2595,25 @@ section {
 			font-size: 45px;
 			line-height: 41px;
 		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 32px;
+			line-height: 36px;
+		}
+
+		@media screen and (max-width: 439px) {
+			line-height: 29px;
+		}
 	}
 
 	.all-link {
 		font-size: 24px;
 		line-height: 29px;
+
+		@media screen and (max-width: 639px) {
+			font-size: 18px;
+			line-height: 20px;
+		}
 	}
 
 	&__cards {
@@ -2146,6 +2624,9 @@ section {
 
 		@media screen and (max-width: 959px) {
 			grid-template-columns: 1fr 1fr;
+		}
+		@media screen and (max-width: 439px) {
+			grid-template-columns: 1fr;
 		}
 	}
 
@@ -2161,6 +2642,10 @@ section {
 
 		@media screen and (max-width: 959px) {
 			padding: 20px 20px 50px 10px;
+		}
+
+		@media screen and (max-width: 639px) {
+			padding: 20px 20px 30px 10px;
 		}
 	}
 
@@ -2203,6 +2688,11 @@ section {
 			font-size: 22px;
 			line-height: 26px;
 		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 18px;
+			line-height: 20px;
+		}
 	}
 
 	&__text {
@@ -2213,6 +2703,11 @@ section {
 		@media screen and (max-width: 1199px) {
 			font-size: 18px;
 			line-height: 22px;
+		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 16px;
+			line-height: 20px;
 		}
 	}
 
@@ -2246,6 +2741,11 @@ section {
 			font-size: 45px;
 			line-height: 41px;
 		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 32px;
+			line-height: 36px;
+		}
 	}
 	&__cards {
 		display: grid;
@@ -2254,6 +2754,13 @@ section {
 
 		@media screen and (max-width: 959px) {
 			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (max-width: 639px) {
+			gap: 20px;
+		}
+		@media screen and (max-width: 479px) {
+			grid-template-columns: 1fr;
 		}
 	}
 
@@ -2269,6 +2776,12 @@ section {
 		align-items: center;
 		min-height: 75px;
 		width: 100%;
+
+		@media screen and (max-width: 479px) {
+			max-height: 50px;
+			min-height: unset;
+			width: 100%;
+		}
 	}
 	&__logo {
 		max-width: 90%;
@@ -2278,6 +2791,10 @@ section {
 		@media screen and (max-width: 959px) {
 			max-height: 55px;
 		}
+
+		@media screen and (max-width: 479px) {
+			max-height: 100%;
+		}
 	}
 	&__text {
 		font-size: 16px;
@@ -2286,6 +2803,10 @@ section {
 
 		@media screen and (max-width: 1199px) {
 			font-size: 18px;
+		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 16px;
 		}
 	}
 	&__link {
@@ -2297,6 +2818,10 @@ section {
 
 		@media screen and (max-width: 1199px) {
 			font-size: 22px;
+		}
+
+		@media screen and (max-width: 639px) {
+			font-size: 18px;
 		}
 
 		span {

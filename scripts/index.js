@@ -4,7 +4,9 @@ const jobTooltip = document.querySelector("#tooltip-job");
 const refundTooltip = document.querySelector("#tooltip-refund");
 const jobTooltipBtn = document.querySelector("#internship");
 const refundTooltipBtn = document.querySelector("#refund");
+const burgerMenuBtn = document.querySelector(".main__burger");
 
+burgerMenuBtn.addEventListener("click", openMobileMenu);
 jobTooltipBtn.addEventListener("click", () => {
 	openTooltip(jobTooltip);
 });
@@ -191,4 +193,24 @@ function closeTooltipByOverlay(event) {
 			closeTooltip(document.querySelector(".warranty__tooltip_visible"));
 		}
 	}
+}
+
+function openMobileMenu() {
+	burgerMenuBtn.classList.add("main__burger_clicked");
+	setTimeout(() => {
+		window.addEventListener("click", closeMobileMenuByOverlay);
+	}, 200);
+}
+
+function closeMobileMenuByOverlay (event) {
+	if (event.type === "click") {
+		if (event.target !== document.querySelector(".main__burger")) {
+			closeMobileMenu(document.querySelector(".main__burger_clicked"));
+		}
+	}
+}
+
+function closeMobileMenu () {
+	burgerMenuBtn.classList.remove("main__burger_clicked");
+	window.removeEventListener("click", closeMobileMenuByOverlay);
 }

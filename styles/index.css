@@ -1,8 +1,26 @@
 @charset "UTF-8";
 @font-face {
-  font-family: heliosexBOLD-neuemachina;
-  src: url(https://tools.skillfactory.ru/PPNeueMachina-InktrapRegular.woff);
+  font-family: "heliosexBOLD-neuemachina";
+  src: url("https://tools.skillfactory.ru/heliosext.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
+@font-face {
+  font-family: "heliosexBOLD-neuemachina";
+  src: url("https://tools.skillfactory.ru/HeliosExtC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "heliosexBOLD-neuemachina";
+  src: url("https://tools.skillfactory.ru/PPNeueMachina-InktrapRegular.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+#allrecords a {
+  color: inherit;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +39,7 @@ section {
 
 .outer-wrapper {
   background: #b5e916;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .inner-wrapper {
@@ -54,7 +72,7 @@ section {
   color: #181818;
   font-size: 64px;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 800;
   max-width: 770px;
   margin-bottom: 20px;
 }
@@ -83,6 +101,71 @@ section {
 
 .main {
   overflow: hidden;
+}
+.main__header {
+  display: flex;
+  justify-content: space-between;
+}
+.main__logo-wrapper img {
+  max-width: 188px;
+}
+.main__nav {
+  display: flex;
+  list-style: none;
+  padding-left: 0 !important;
+  gap: 30px;
+  align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .main__nav {
+    display: none;
+  }
+}
+.main__nav-item {
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: #181818 !important;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.2s;
+}
+.main__nav-item:hover {
+  transition: 0.2s;
+  opacity: 0.7;
+}
+.main__burger {
+  display: none;
+  border: none;
+  background: none;
+  outline: none;
+  position: relative;
+  color: transparent !important;
+}
+.main__burger .main__burger-line {
+  width: 17px;
+  height: 2px;
+  background: #181818;
+  transition: 0.2s;
+}
+@media screen and (max-width: 1199px) {
+  .main__burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+.main__burger_clicked .main__burger-line:first-of-type {
+  transform: rotate(45deg) translate3d(5px, 5px, 0px);
+  transition: 0.2s;
+}
+.main__burger_clicked .main__burger-line:nth-of-type(2) {
+  opacity: 0;
+  transition: 0.2s;
+}
+.main__burger_clicked .main__burger-line:last-of-type {
+  transform: rotate(-45deg) translate3d(5px, -5px, 0px);
+  transition: 0.2s;
 }
 .main .columns {
   width: 100%;
@@ -116,7 +199,7 @@ section {
   color: #181818;
   font-size: 80px;
   line-height: 0.9;
-  font-weight: 400;
+  font-weight: 800;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1199px) {
@@ -154,6 +237,7 @@ section {
 .main .list {
   list-style: none;
   margin-bottom: 50px;
+  padding-left: 0 !important;
 }
 @media screen and (max-width: 959px) {
   .main .list {
@@ -228,6 +312,7 @@ section {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  padding-left: 0 !important;
 }
 .main .directions__list-link {
   display: flex;
@@ -238,11 +323,15 @@ section {
   align-items: center;
   justify-content: center;
   transition: 0.1s linear;
-  text-decoration: none;
-  color: #033932;
+  text-decoration: none !important;
+  color: #033932 !important;
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
+}
+.main .directions__list-link span {
+  position: relative;
+  top: 2px;
 }
 @media screen and (max-width: 1199px) {
   .main .directions__list-link {
@@ -296,7 +385,7 @@ section {
 }
 .main .directions__list-link_green {
   background: #033932;
-  color: #fff;
+  color: #fff !important;
 }
 .main .directions__list-link_green:hover {
   background: #00594f;
@@ -321,7 +410,7 @@ section {
 @media screen and (max-width: 479px) {
   .main .main__pic {
     margin-left: 0;
-    top: -590px;
+    top: -690px;
   }
 }
 .main .main__pic img {
@@ -393,13 +482,14 @@ section {
   }
 }
 .courses .cards {
-  margin: 0 0 26px 0 !important;
+  margin: 0 0 37px 0 !important;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
   list-style: none;
   width: 100%;
+  padding-left: 0 !important;
 }
 @media screen and (max-width: 959px) {
   .courses .cards {
@@ -493,6 +583,7 @@ section {
   transition: 0.1s;
 }
 .courses .card__title {
+  color: #033932;
   font-size: 32px;
   line-height: 0.9;
   font-weight: 400;
@@ -541,18 +632,26 @@ section {
 .courses .card__current-price {
   font-size: 32px;
   line-height: 0.9;
-  font-weight: 400;
+  font-weight: 800;
 }
 .courses .card__installment {
   font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
 }
-.courses .card_dark .card__link {
-  color: #fffaed;
+.courses .card_dark .card__link,
+.courses .card_dark .card__title {
+  color: #fffaed !important;
 }
 .courses .card_dark .card__label {
-  background-color: #fffaed;
+  background: #fffaed !important;
+}
+.courses .card_dark:hover .card__link,
+.courses .card_dark:hover .card__title {
+  color: #033932 !important;
+}
+.courses .card_dark:hover .card__label {
+  color: #fffaed !important;
 }
 .courses #it-specialist-proforientaciya {
   background: #043933;
@@ -587,7 +686,7 @@ section {
   transition: 0.1s;
 }
 .courses #it-specialist-proforientaciya:hover .card__label {
-  background: #033932;
+  background: #033932 !important;
   color: #fffaed;
   transition: 0.1s;
 }
@@ -739,10 +838,14 @@ section {
 .courses #uxui-pro #contented {
   opacity: 1;
   visibility: visible;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .courses #uxui-pro #contented-hover {
   opacity: 0;
   visibility: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media screen and (max-width: 639px) {
   .courses #uxui-pro #svg-one,
@@ -777,8 +880,9 @@ section {
   background: #181818;
   transition: 0.1s;
 }
-.courses #uxui-pro:hover .card__link {
-  color: #fffaed;
+.courses #uxui-pro:hover .card__link,
+.courses #uxui-pro:hover .card__title {
+  color: #fffaed !important;
   transition: 0.1s;
 }
 .courses #uxui-pro:hover .card__label {
@@ -831,8 +935,9 @@ section {
   background: #ff6945;
   transition: 0.1s;
 }
-.courses #python:hover .card__link {
-  color: #fffaed;
+.courses #python:hover .card__link,
+.courses #python:hover .card__title {
+  color: #fffaed !important;
   transition: 0.1s;
 }
 .courses #python:hover .card__label {
@@ -857,7 +962,7 @@ section {
 }
 .courses #white-hacker img {
   width: 100%;
-  bottom: 130px;
+  bottom: 60px;
 }
 @media screen and (max-width: 639px) {
   .courses #white-hacker img {
@@ -889,8 +994,9 @@ section {
   background: #043933;
   transition: 0.1s;
 }
-.courses #white-hacker:hover .card__link {
-  color: #fffaed;
+.courses #white-hacker:hover .card__link,
+.courses #white-hacker:hover .card__title {
+  color: #fffaed !important;
   transition: 0.1s;
 }
 .courses #white-hacker:hover .card__label {
@@ -936,6 +1042,9 @@ section {
   }
 }
 
+.warranty {
+  margin-bottom: 33px;
+}
 @media screen and (max-width: 639px) {
   .warranty {
     overflow: hidden;
@@ -1003,8 +1112,8 @@ section {
   background-size: contain;
   background-position: center;
   transform: rotate(6deg);
-  width: 300px;
-  height: 120px;
+  width: 360px;
+  height: 150px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -1014,7 +1123,8 @@ section {
   line-height: 0.93;
   font-weight: 400;
   right: 0;
-  top: -50px;
+  top: -80px;
+  text-align: center;
 }
 @media screen and (max-width: 1199px) {
   .warranty__label {
@@ -1124,7 +1234,7 @@ section {
   }
 }
 .warranty__link {
-  color: #fffaed;
+  color: #fffaed !important;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
@@ -1132,7 +1242,6 @@ section {
   border-radius: 3px;
   background: #033932;
   text-decoration: none;
-  color: #fffaed;
   padding: 20px 120px;
   transition: 0.2s;
 }
@@ -1462,8 +1571,12 @@ section {
   margin-bottom: 100px;
   padding-top: 5px;
 }
+.employer-reviews .h2-title {
+  margin-bottom: 60px;
+}
 @media screen and (max-width: 959px) {
   .employer-reviews .h2-title {
+    margin-bottom: 30px;
     font-size: 45px;
     max-width: 510px;
   }
@@ -1508,7 +1621,7 @@ section {
 .employer-reviews__left img {
   border-radius: 4px;
   height: 100%;
-  width: 100%;
+  width: 368px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1768,6 +1881,8 @@ section {
   margin-bottom: 0;
   grid-area: title;
   margin-bottom: 60px;
+  font-weight: 800;
+  line-height: 43px;
 }
 @media screen and (max-width: 959px) {
   .carrier .h2-title {
@@ -1857,6 +1972,7 @@ section {
 }
 .carrier__more a {
   color: #181818;
+  text-decoration: underline !important;
 }
 .carrier__grid {
   grid-area: cards;
@@ -1990,11 +2106,11 @@ section {
 .community {
   background: #a2c1c4;
   padding-bottom: 90px;
+  padding-top: 30px;
 }
 @media screen and (max-width: 479px) {
   .community {
     margin-top: -1px;
-    padding-top: 30px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -2279,6 +2395,7 @@ section {
 }
 .reviews .h2-title {
   max-width: 900px;
+  margin-bottom: 60px;
 }
 @media screen and (max-width: 639px) {
   .reviews .h2-title {
@@ -2449,6 +2566,7 @@ section {
   font-size: 64px;
   margin-bottom: 10px;
   line-height: 58px;
+  font-weight: 800;
 }
 @media screen and (max-width: 1199px) {
   .scores__title {
@@ -2952,4 +3070,4 @@ section {
 .smi__link:hover {
   opacity: 0.7;
   transition: 0.2s;
-}
+}/*# sourceMappingURL=index.css.map */

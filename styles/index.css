@@ -653,203 +653,203 @@ section {
 .courses .card_dark:hover .card__label {
   color: #fffaed !important;
 }
-.courses #it-specialist-proforientaciya {
+.courses #START {
   background: #043933;
   transition: 0.1s;
 }
-.courses #it-specialist-proforientaciya img {
+.courses #START img {
   bottom: -50px;
 }
 @media screen and (max-width: 1199px) {
-  .courses #it-specialist-proforientaciya img {
+  .courses #START img {
     bottom: 0;
   }
 }
 @media screen and (max-width: 639px) {
-  .courses #it-specialist-proforientaciya img {
+  .courses #START img {
     bottom: -140px;
   }
 }
 @media screen and (max-width: 439px) {
-  .courses #it-specialist-proforientaciya img {
+  .courses #START img {
     bottom: -50px;
     left: 30px;
     width: 320px;
   }
 }
-.courses #it-specialist-proforientaciya:hover {
+.courses #START:hover {
   background: #b5e916;
   transition: 0.1s;
 }
-.courses #it-specialist-proforientaciya:hover .card__link {
+.courses #START:hover .card__link {
   color: #033932;
   transition: 0.1s;
 }
-.courses #it-specialist-proforientaciya:hover .card__label {
+.courses #START:hover .card__label {
   background: #033932 !important;
   color: #fffaed;
   transition: 0.1s;
 }
-.courses #it-specialist-proforientaciya:hover .card__old-price {
+.courses #START:hover .card__old-price {
   color: #718f8d;
   transition: 0.1s;
 }
-.courses #data-analyst {
+.courses #DAPR {
   background: #fffaed;
   transition: 0.1s;
 }
-.courses #data-analyst .card__old-price {
+.courses #DAPR .card__old-price {
   color: #718f8d;
 }
-.courses #data-analyst img {
+.courses #DAPR img {
   width: 300px;
   bottom: 37px;
   right: 0;
 }
 @media screen and (max-width: 1199px) {
-  .courses #data-analyst img {
+  .courses #DAPR img {
     width: 270px;
     height: 270px;
     bottom: 59px;
   }
 }
 @media screen and (max-width: 639px) {
-  .courses #data-analyst img {
+  .courses #DAPR img {
     right: 70px;
   }
 }
 @media screen and (max-width: 439px) {
-  .courses #data-analyst img {
+  .courses #DAPR img {
     right: 0;
     width: 250px;
     bottom: 50px;
   }
 }
-.courses #data-analyst #svg-one {
+.courses #DAPR #svg-one {
   opacity: 1;
   visibility: visible;
 }
-.courses #data-analyst #svg-two {
+.courses #DAPR #svg-two {
   opacity: 0;
   visibility: hidden;
 }
-.courses #data-analyst:hover {
+.courses #DAPR:hover {
   background: #ffe040;
   transition: 0.1s;
 }
-.courses #data-analyst:hover #svg-one {
+.courses #DAPR:hover #svg-one {
   opacity: 0;
   visibility: hidden;
 }
-.courses #data-analyst:hover #svg-two {
+.courses #DAPR:hover #svg-two {
   opacity: 1;
   visibility: visible;
 }
-.courses #data-science {
+.courses #DSPR {
   background: #ffe040;
   transition: 0.1s;
 }
-.courses #data-science .card__old-price {
+.courses #DSPR .card__old-price {
   color: #718f8d;
 }
-.courses #data-science img {
+.courses #DSPR img {
   width: 260px;
   bottom: 50px;
   right: 20px;
 }
 @media screen and (max-width: 1199px) {
-  .courses #data-science img {
+  .courses #DSPR img {
     width: 220px;
     bottom: 80px;
     right: 20px;
   }
 }
 @media screen and (max-width: 639px) {
-  .courses #data-science img {
+  .courses #DSPR img {
     bottom: 40px;
     right: 100px;
   }
 }
 @media screen and (max-width: 439px) {
-  .courses #data-science img {
+  .courses #DSPR img {
     bottom: 70px;
     right: 30px;
     width: 190px;
   }
 }
-.courses #data-science #svg-one {
+.courses #DSPR #svg-one {
   opacity: 1;
   visibility: visible;
 }
-.courses #data-science #svg-two {
+.courses #DSPR #svg-two {
   opacity: 0;
   visibility: hidden;
 }
-.courses #data-science:hover {
+.courses #DSPR:hover {
   background: #dde6e7;
   transition: 0.1s;
 }
-.courses #data-science:hover #svg-one {
+.courses #DSPR:hover #svg-one {
   opacity: 0;
   visibility: hidden;
 }
-.courses #data-science:hover #svg-two {
+.courses #DSPR:hover #svg-two {
   opacity: 1;
   visibility: visible;
 }
-.courses #uxui-pro {
+.courses #UXSPR {
   background: #fdcbd6;
   transition: 0.1s;
 }
 @media screen and (max-width: 639px) {
-  .courses #uxui-pro .card__title {
+  .courses #UXSPR .card__title {
     max-width: 300px;
   }
 }
-.courses #uxui-pro .card__old-price {
+.courses #UXSPR .card__old-price {
   color: #718f8d;
 }
-.courses #uxui-pro img {
+.courses #UXSPR img {
   width: 300px;
   top: 12px;
   left: 22px;
 }
 @media screen and (max-width: 1199px) {
-  .courses #uxui-pro img {
+  .courses #UXSPR img {
     width: 270px;
     top: 24px;
     left: 18px;
   }
 }
 @media screen and (max-width: 639px) {
-  .courses #uxui-pro img {
+  .courses #UXSPR img {
     width: 240px;
     top: 44px;
     left: 178px;
   }
 }
 @media screen and (max-width: 479px) {
-  .courses #uxui-pro img {
+  .courses #UXSPR img {
     width: 200px;
     top: 44px;
     left: 48px;
   }
 }
-.courses #uxui-pro #contented {
+.courses #UXSPR #contented {
   opacity: 1;
   visibility: visible;
   width: -moz-fit-content;
   width: fit-content;
 }
-.courses #uxui-pro #contented-hover {
+.courses #UXSPR #contented-hover {
   opacity: 0;
   visibility: hidden;
   width: -moz-fit-content;
   width: fit-content;
 }
 @media screen and (max-width: 639px) {
-  .courses #uxui-pro #svg-one,
-  .courses #uxui-pro #svg-two {
+  .courses #UXSPR #svg-one,
+  .courses #UXSPR #svg-two {
     transform: translateY(10px) rotate(-90deg);
     width: -moz-fit-content;
     width: fit-content;
@@ -859,8 +859,8 @@ section {
   }
 }
 @media screen and (max-width: 479px) {
-  .courses #uxui-pro #svg-one,
-  .courses #uxui-pro #svg-two {
+  .courses #UXSPR #svg-one,
+  .courses #UXSPR #svg-two {
     transform: unset;
     width: 70%;
     top: 140px;
@@ -868,104 +868,104 @@ section {
     right: unset;
   }
 }
-.courses #uxui-pro #svg-one {
+.courses #UXSPR #svg-one {
   opacity: 1;
   visibility: visible;
 }
-.courses #uxui-pro #svg-two {
+.courses #UXSPR #svg-two {
   opacity: 0;
   visibility: hidden;
 }
-.courses #uxui-pro:hover {
+.courses #UXSPR:hover {
   background: #181818;
   transition: 0.1s;
 }
-.courses #uxui-pro:hover .card__link,
-.courses #uxui-pro:hover .card__title {
+.courses #UXSPR:hover .card__link,
+.courses #UXSPR:hover .card__title {
   color: #fffaed !important;
   transition: 0.1s;
 }
-.courses #uxui-pro:hover .card__label {
+.courses #UXSPR:hover .card__label {
   background: #fffaed;
   color: #fffaed;
   transition: 0.1s;
 }
-.courses #uxui-pro:hover #contented {
+.courses #UXSPR:hover #contented {
   opacity: 0;
   visibility: hidden;
 }
-.courses #uxui-pro:hover #contented-hover {
+.courses #UXSPR:hover #contented-hover {
   opacity: 1;
   visibility: visible;
 }
-.courses #uxui-pro:hover #svg-one {
+.courses #UXSPR:hover #svg-one {
   opacity: 0;
   visibility: hidden;
 }
-.courses #uxui-pro:hover #svg-two {
+.courses #UXSPR:hover #svg-two {
   opacity: 1;
   visibility: visible;
 }
-.courses #python {
+.courses #PDEV {
   background: #dde6e7;
   transition: 0.1s;
 }
-.courses #python .card__old-price {
+.courses #PDEV .card__old-price {
   color: #718f8d;
 }
-.courses #python img {
+.courses #PDEV img {
   width: 387px;
   bottom: 0;
   right: 0;
 }
 @media screen and (max-width: 1199px) {
-  .courses #python img {
+  .courses #PDEV img {
     width: 317px;
   }
 }
-.courses #python #svg-one {
+.courses #PDEV #svg-one {
   opacity: 1;
   visibility: visible;
 }
-.courses #python #svg-two {
+.courses #PDEV #svg-two {
   opacity: 0;
   visibility: hidden;
 }
-.courses #python:hover {
+.courses #PDEV:hover {
   background: #ff6945;
   transition: 0.1s;
 }
-.courses #python:hover .card__link,
-.courses #python:hover .card__title {
+.courses #PDEV:hover .card__link,
+.courses #PDEV:hover .card__title {
   color: #fffaed !important;
   transition: 0.1s;
 }
-.courses #python:hover .card__label {
+.courses #PDEV:hover .card__label {
   background: #fffaed;
   color: #fffaed;
   transition: 0.1s;
 }
-.courses #python:hover #svg-one {
+.courses #PDEV:hover #svg-one {
   opacity: 0;
   visibility: hidden;
 }
-.courses #python:hover #svg-two {
+.courses #PDEV:hover #svg-two {
   opacity: 1;
   visibility: visible;
 }
-.courses #white-hacker {
+.courses #HACKER {
   background: #fffaed;
   transition: 0.1s;
 }
-.courses #white-hacker .card__old-price {
+.courses #HACKER .card__old-price {
   color: #718f8d;
 }
-.courses #white-hacker img {
+.courses #HACKER img {
   width: 100%;
   bottom: 60px;
 }
 @media screen and (max-width: 639px) {
-  .courses #white-hacker img {
+  .courses #HACKER img {
     width: -moz-fit-content;
     width: fit-content;
     height: 100%;
@@ -975,40 +975,40 @@ section {
   }
 }
 @media screen and (max-width: 479px) {
-  .courses #white-hacker img {
+  .courses #HACKER img {
     bottom: 50px;
     right: 0;
     transform: rotate(0deg);
     width: 100%;
   }
 }
-.courses #white-hacker #svg-one {
+.courses #HACKER #svg-one {
   opacity: 1;
   visibility: visible;
 }
-.courses #white-hacker #svg-two {
+.courses #HACKER #svg-two {
   opacity: 0;
   visibility: hidden;
 }
-.courses #white-hacker:hover {
+.courses #HACKER:hover {
   background: #043933;
   transition: 0.1s;
 }
-.courses #white-hacker:hover .card__link,
-.courses #white-hacker:hover .card__title {
+.courses #HACKER:hover .card__link,
+.courses #HACKER:hover .card__title {
   color: #fffaed !important;
   transition: 0.1s;
 }
-.courses #white-hacker:hover .card__label {
+.courses #HACKER:hover .card__label {
   background: #fffaed;
   color: #fffaed;
   transition: 0.1s;
 }
-.courses #white-hacker:hover #svg-one {
+.courses #HACKER:hover #svg-one {
   opacity: 0;
   visibility: hidden;
 }
-.courses #white-hacker:hover #svg-two {
+.courses #HACKER:hover #svg-two {
   opacity: 1;
   visibility: visible;
 }

@@ -28,18 +28,8 @@
   box-sizing: border-box;
 }
 
-section {
-  margin-bottom: 100px;
-}
-@media screen and (max-width: 1199px) {
-  section {
-    margin-bottom: 70px;
-  }
-}
-
 .outer-wrapper {
   background: #b5e916;
-  padding-top: 40px;
 }
 
 .inner-wrapper {
@@ -71,10 +61,10 @@ section {
 .h2-title {
   color: #181818;
   font-size: 64px;
-  line-height: 1;
+  line-height: 90%;
   font-weight: 800;
   max-width: 770px;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 @media screen and (max-width: 1199px) {
   .h2-title {
@@ -96,15 +86,31 @@ section {
   .h2-title {
     font-size: 30px;
     line-height: 28px;
+    margin-bottom: 24px;
   }
 }
 
 .main {
+  margin-bottom: 90px;
   overflow: hidden;
+}
+@media screen and (max-width: 479px) {
+  .main {
+    margin-bottom: 38px;
+  }
 }
 .main__header {
   display: flex;
   justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 38px;
+}
+@media screen and (max-width: 479px) {
+  .main__header {
+    margin-bottom: 24px;
+    height: 80px;
+  }
 }
 .main__logo-wrapper img {
   max-width: 188px;
@@ -171,7 +177,7 @@ section {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 0.8fr;
-  margin-top: 50px;
+  padding-bottom: 58px;
 }
 @media screen and (max-width: 959px) {
   .main .columns {
@@ -188,19 +194,20 @@ section {
   display: flex;
   margin: 0 auto;
   height: 40px;
-  width: 1160px;
+  width: 100%;
 }
 @media screen and (max-width: 959px) {
   .main .main__bottom-border {
-    left: -270px;
+    left: 0;
+    background-size: cover;
   }
 }
 .main .title {
   color: #181818;
   font-size: 80px;
-  line-height: 0.9;
+  line-height: 74px;
   font-weight: 800;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 1199px) {
   .main .title {
@@ -217,6 +224,7 @@ section {
   .main .title {
     font-size: 45px;
     line-height: 41px;
+    margin-bottom: 20px;
   }
 }
 .main .block-lead {
@@ -251,7 +259,7 @@ section {
 }
 @media screen and (max-width: 439px) {
   .main .list {
-    margin-bottom: 350px;
+    margin-bottom: 374px;
   }
 }
 .main .list-item {
@@ -281,15 +289,12 @@ section {
     line-height: 20px;
   }
 }
-.main .directions {
-  margin-bottom: 50px;
-}
 .main .directions__title {
   color: #181818;
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 1199px) {
   .main .directions__title {
@@ -305,6 +310,8 @@ section {
   .main .directions__title {
     font-size: 14px;
     line-height: 20px;
+    opacity: 0.7;
+    margin-bottom: 8px;
   }
 }
 .main .directions__list {
@@ -314,11 +321,16 @@ section {
   flex-wrap: wrap;
   padding-left: 0 !important;
 }
+@media screen and (max-width: 439px) {
+  .main .directions__list {
+    gap: 12px;
+  }
+}
 .main .directions__list-link {
   display: flex;
   flex-wrap: nowrap;
   background: #fff;
-  padding: 15px;
+  padding: 16px;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -352,9 +364,9 @@ section {
 }
 @media screen and (max-width: 439px) {
   .main .directions__list-link {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
-    padding: 10px;
+    padding: 12px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -395,6 +407,7 @@ section {
   display: flex;
   justify-content: flex-end;
   top: 15px;
+  height: calc(100% - 15px);
 }
 @media screen and (max-width: 959px) {
   .main .main__pic {
@@ -410,12 +423,15 @@ section {
 @media screen and (max-width: 479px) {
   .main .main__pic {
     margin-left: 0;
-    top: -690px;
+    top: -550px;
   }
 }
 .main .main__pic img {
   position: relative;
-  max-width: 92%;
+  max-width: 466px;
+  height: 539px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 959px) {
   .main .main__pic img {
@@ -471,14 +487,12 @@ section {
   }
 }
 
+.courses {
+  margin-bottom: 80px;
+}
 @media screen and (max-width: 479px) {
   .courses {
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 639px) {
-  .courses .h2-title {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
   }
 }
 .courses .cards {
@@ -486,7 +500,7 @@ section {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  gap: 24px;
   list-style: none;
   width: 100%;
   padding-left: 0 !important;
@@ -503,17 +517,19 @@ section {
 }
 @media screen and (max-width: 479px) {
   .courses .cards {
-    gap: 10px;
+    gap: 0;
+    margin: 0 0 24px 0 !important;
   }
 }
 .courses .block-lead {
   color: #181818;
   font-size: 24px;
-  line-height: 1.2;
+  font-style: normal;
   font-weight: 400;
+  line-height: 120%;
   opacity: 0.7;
   max-width: 600px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 @media screen and (max-width: 1199px) {
   .courses .block-lead {
@@ -524,6 +540,7 @@ section {
   .courses .block-lead {
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 32px;
   }
 }
 .courses .card {
@@ -538,7 +555,13 @@ section {
 }
 @media screen and (max-width: 639px) {
   .courses .card {
-    height: 370px;
+    height: 432px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .courses .card {
+    width: 320px;
+    left: -10px;
   }
 }
 .courses .card img {
@@ -554,7 +577,12 @@ section {
   z-index: 1;
   transform: translateY(10px);
   transition: 0.1s;
-  width: 95%;
+  width: calc(100% - 60px);
+}
+@media screen and (max-width: 479px) {
+  .courses .card svg {
+    width: calc(100% - 52px);
+  }
 }
 .courses .card svg#contented,
 .courses .card svg#contented-hover {
@@ -576,18 +604,23 @@ section {
   align-items: flex-start;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 32px 30px;
   color: #033932;
   position: relative;
   z-index: 3;
   transition: 0.1s;
+}
+@media screen and (max-width: 479px) {
+  .courses .card__link {
+    padding: 24px 18px 32px 18px;
+  }
 }
 .courses .card__title {
   color: #033932;
   font-size: 32px;
   line-height: 0.9;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 @media screen and (max-width: 1199px) {
   .courses .card__title {
@@ -715,7 +748,7 @@ section {
 }
 @media screen and (max-width: 639px) {
   .courses #DAPR img {
-    right: 70px;
+    right: 92px;
   }
 }
 @media screen and (max-width: 439px) {
@@ -862,8 +895,8 @@ section {
   .courses #UXSPR #svg-one,
   .courses #UXSPR #svg-two {
     transform: unset;
-    width: 70%;
-    top: 140px;
+    width: calc(100% - 42px);
+    top: 150px;
     height: unset;
     right: unset;
   }
@@ -881,7 +914,8 @@ section {
   transition: 0.1s;
 }
 .courses #UXSPR:hover .card__link,
-.courses #UXSPR:hover .card__title {
+.courses #UXSPR:hover .card__title,
+.courses #UXSPR:hover .card__old-price {
   color: #fffaed !important;
   transition: 0.1s;
 }
@@ -936,7 +970,8 @@ section {
   transition: 0.1s;
 }
 .courses #PDEV:hover .card__link,
-.courses #PDEV:hover .card__title {
+.courses #PDEV:hover .card__title,
+.courses #PDEV:hover .card__old-price {
   color: #fffaed !important;
   transition: 0.1s;
 }
@@ -966,11 +1001,10 @@ section {
 }
 @media screen and (max-width: 639px) {
   .courses #HACKER img {
-    width: -moz-fit-content;
-    width: fit-content;
-    height: 100%;
-    bottom: 0;
-    right: -120px;
+    width: 100%;
+    height: auto;
+    bottom: -64px;
+    right: -190px;
     transform: rotate(90deg);
   }
 }
@@ -995,7 +1029,8 @@ section {
   transition: 0.1s;
 }
 .courses #HACKER:hover .card__link,
-.courses #HACKER:hover .card__title {
+.courses #HACKER:hover .card__title,
+.courses #HACKER:hover .card__old-price {
   color: #fffaed !important;
   transition: 0.1s;
 }
@@ -1043,7 +1078,7 @@ section {
 }
 
 .warranty {
-  margin-bottom: 33px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 639px) {
   .warranty {
@@ -1052,13 +1087,14 @@ section {
 }
 @media screen and (max-width: 439px) {
   .warranty {
-    padding-top: 60px;
+    padding-top: 56px;
+    margin-bottom: 56px;
   }
 }
 .warranty__bg {
   background: #b5e916;
   border-radius: 8px;
-  padding: 30px 30px 50px 30px;
+  padding: 40px 40px 100px 40px;
 }
 @media screen and (max-width: 639px) {
   .warranty__bg {
@@ -1104,6 +1140,7 @@ section {
     font-size: 26px;
     line-height: 23px;
     margin-bottom: 30px;
+    max-width: 96%;
   }
 }
 .warranty__label {
@@ -1112,8 +1149,8 @@ section {
   background-size: contain;
   background-position: center;
   transform: rotate(6deg);
-  width: 360px;
-  height: 150px;
+  width: 380px;
+  height: 160px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -1141,14 +1178,15 @@ section {
 }
 @media screen and (max-width: 639px) {
   .warranty__label {
-    top: 62px;
+    top: 46px;
     width: 250px;
   }
 }
 @media screen and (max-width: 439px) {
   .warranty__label {
-    font-size: 18px;
-    top: -80px;
+    font-size: 16px;
+    top: -99px;
+    right: -16px;
     width: 200px;
   }
 }
@@ -1156,7 +1194,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 959px) {
   .warranty__columns {
@@ -1266,10 +1304,10 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  width: 366px;
-  height: 255px;
-  bottom: -50px;
-  right: 90px;
+  width: 435px;
+  height: 300px;
+  bottom: -106px;
+  right: 20px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1381,12 +1419,27 @@ section {
   color: #8b8983 !important;
 }
 
+.business {
+  margin-bottom: 112px;
+}
+@media screen and (max-width: 439px) {
+  .business {
+    margin-bottom: 80px;
+  }
+}
+.business .h2-title {
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 439px) {
+  .business .h2-title {
+    margin-bottom: 24px;
+  }
+}
 .business__columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "lead list" "cards cards";
-  gap: 60px;
-  margin-bottom: 50px;
+  gap: 56px;
 }
 @media screen and (max-width: 959px) {
   .business__columns {
@@ -1425,13 +1478,9 @@ section {
   list-style: none;
   max-width: 80%;
   grid-area: list;
-}
-@media screen and (max-width: 959px) {
-  .business__list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 @media screen and (max-width: 479px) {
   .business__list {
@@ -1464,12 +1513,13 @@ section {
 }
 .business__list-item::marker {
   content: "→";
+  font-weight: 800;
 }
 .business__cards {
   grid-area: cards;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 @media screen and (max-width: 959px) {
   .business__cards {
@@ -1503,7 +1553,7 @@ section {
 .business__card-label {
   width: -moz-fit-content;
   width: fit-content;
-  padding: 8px;
+  padding: 8px 12px;
   color: #ffffff;
   font-size: 20px;
   line-height: 1;
@@ -1571,8 +1621,13 @@ section {
   margin-bottom: 100px;
   padding-top: 5px;
 }
+@media screen and (max-width: 439px) {
+  .employer-reviews {
+    margin-bottom: 80px;
+  }
+}
 .employer-reviews .h2-title {
-  margin-bottom: 60px;
+  margin-bottom: 47px;
 }
 @media screen and (max-width: 959px) {
   .employer-reviews .h2-title {
@@ -1676,7 +1731,7 @@ section {
   position: absolute;
   z-index: 2;
   right: 0;
-  top: 72px;
+  top: 62px;
   display: flex;
   gap: 10px;
 }
@@ -1706,6 +1761,7 @@ section {
 .pagination__button:hover {
   transition: 0.2s;
   opacity: 0.7;
+  background-color: #033932;
 }
 @media screen and (max-width: 959px) {
   .pagination__button {
@@ -1714,13 +1770,28 @@ section {
   }
 }
 .pagination__button_next {
-  background-image: url(https://static.tildacdn.com/tild6638-3034-4966-b231-653237633464/57b32d26-691b-43ad-8.svg);
-  background-color: #033932;
+  transform: rotate(180deg);
 }
 
 .free-materials {
   overflow: hidden;
   padding-bottom: 4px;
+  margin-bottom: 112px;
+}
+@media screen and (max-width: 479px) {
+  .free-materials {
+    margin-bottom: 56px;
+  }
+}
+@media screen and (max-width: 959px) {
+  .free-materials .pagination__buttons {
+    top: 84px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .free-materials .pagination__buttons {
+    top: 110px;
+  }
 }
 @media screen and (max-width: 479px) {
   .free-materials .pagination__buttons {
@@ -1730,7 +1801,7 @@ section {
 @media screen and (max-width: 479px) {
   .free-materials .swiper-wrapper {
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
   }
 }
 .free-materials .all-link {
@@ -1743,15 +1814,10 @@ section {
 }
 .free-materials .h2-title {
   max-width: 800px;
-}
-@media screen and (max-width: 1199px) {
-  .free-materials .h2-title {
-    margin-bottom: 50px;
-  }
+  margin-bottom: 48px;
 }
 @media screen and (max-width: 959px) {
   .free-materials .h2-title {
-    margin-bottom: 50px;
     max-width: 650px;
     font-size: 45px;
     line-height: 41px;
@@ -1767,10 +1833,16 @@ section {
   .free-materials .h2-title {
     font-size: 32px;
     line-height: 29px;
+    margin-bottom: 66px;
   }
 }
 .free-materials__wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 479px) {
+  .free-materials__wrapper {
+    margin-bottom: 24px;
+  }
 }
 .free-materials__slide {
   text-decoration: none;
@@ -1797,8 +1869,8 @@ section {
 .free-materials__pre-card {
   display: flex;
   gap: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
+  margin-bottom: 8px;
+  font-size: 12px;
   line-height: 1.2;
   font-weight: 400;
 }
@@ -1810,16 +1882,20 @@ section {
 }
 .free-materials__card {
   border: 1px solid;
-  padding: 25px 20px 30px 20px;
+  padding: 32px 24px 40px 24px;
   border-radius: 4px;
   min-height: 430px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 @media screen and (max-width: 639px) {
   .free-materials__card {
     min-height: 350px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .free-materials__card {
+    padding: 24px 16px 40px 16px;
   }
 }
 .free-materials__card-title {
@@ -1827,7 +1903,8 @@ section {
   font-size: 28px;
   line-height: 0.9;
   font-weight: 400;
-  width: 89%;
+  max-width: 270px;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 1199px) {
   .free-materials__card-title {
@@ -1846,6 +1923,8 @@ section {
   font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
+  max-width: 270px;
+  margin-bottom: 56px;
 }
 .free-materials__card-button {
   color: #fffaed;
@@ -1861,6 +1940,8 @@ section {
   padding: 10px;
   transition: 0.2s;
   cursor: pointer;
+  max-width: 270px;
+  margin-top: auto;
 }
 .free-materials__card-button:hover {
   background-color: #00594f;
@@ -1875,6 +1956,9 @@ section {
 .carrier {
   overflow: hidden;
   margin: 0;
+}
+.carrier .inner-wrapper {
+  padding-top: 48px;
 }
 .carrier .h2-title {
   font-size: 48px;
@@ -1898,16 +1982,12 @@ section {
 @media screen and (max-width: 479px) {
   .carrier .h2-title {
     font-size: 32px;
+    line-height: 29px;
     margin-bottom: 30px;
   }
 }
 .carrier .outer-wrapper {
   padding-bottom: 20px;
-}
-@media screen and (max-width: 479px) {
-  .carrier .outer-wrapper {
-    padding-top: 40px;
-  }
 }
 .carrier__label {
   color: #043933;
@@ -1916,10 +1996,10 @@ section {
   font-weight: 400;
   border-radius: 3px;
   background-color: #ffffff;
-  padding: 10px;
+  padding: 8px 12px;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 .carrier__content-wrapper {
   display: grid;
@@ -1979,7 +2059,7 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 83px;
 }
 @media screen and (max-width: 1199px) {
   .carrier__grid {
@@ -1992,11 +2072,19 @@ section {
     gap: 20px;
   }
 }
+@media screen and (max-width: 479px) {
+  .carrier__grid {
+    margin-bottom: 40px;
+  }
+}
 .carrier__grid-benefits {
   grid-area: benefits;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+}
+.carrier__grid-benefits .carrier__item-title {
+  font-weight: 800;
 }
 @media screen and (max-width: 959px) {
   .carrier__grid-benefits {
@@ -2014,7 +2102,7 @@ section {
   font-size: 32px;
   line-height: 0.9;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 @media screen and (max-width: 1199px) {
   .carrier__item-title {
@@ -2105,8 +2193,9 @@ section {
 }
 .community {
   background: #a2c1c4;
-  padding-bottom: 90px;
-  padding-top: 30px;
+  padding-bottom: 108px;
+  padding-top: 40px;
+  margin-bottom: 112px;
 }
 @media screen and (max-width: 479px) {
   .community {
@@ -2116,6 +2205,8 @@ section {
 @media screen and (max-width: 479px) {
   .community {
     padding-bottom: 60px;
+    padding-top: 28px;
+    margin-bottom: 56px;
   }
 }
 .community .h2-title {
@@ -2164,6 +2255,7 @@ section {
 @media screen and (max-width: 479px) {
   .community__lead {
     font-size: 18px;
+    line-height: 22px;
   }
 }
 .community__columns {
@@ -2195,8 +2287,8 @@ section {
 }
 @media screen and (max-width: 479px) {
   .community__photo {
-    width: 40px;
-    height: 40px;
+    width: 51px;
+    height: 51px;
   }
 }
 .community #photo-one {
@@ -2265,7 +2357,7 @@ section {
 }
 @media screen and (max-width: 479px) {
   .community #photo-four {
-    left: 260px;
+    left: 259px;
     top: 130px;
   }
 }
@@ -2335,7 +2427,8 @@ section {
 @media screen and (max-width: 479px) {
   .community #photo-seven {
     top: 0px;
-    left: 260px;
+    left: unset;
+    right: -10px;
   }
 }
 .community__list {
@@ -2348,6 +2441,12 @@ section {
 @media screen and (max-width: 959px) {
   .community__list {
     max-width: 60%;
+  }
+}
+@media screen and (max-width: 639px) {
+  .community__list {
+    max-width: 80%;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -2383,6 +2482,7 @@ section {
   content: "→";
   color: #181818;
   font-size: 20px;
+  font-weight: 800;
 }
 @media screen and (max-width: 1199px) {
   .community__list-item::marker {
@@ -2392,6 +2492,12 @@ section {
 
 .reviews {
   overflow: hidden;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 479px) {
+  .reviews {
+    margin-bottom: 56px;
+  }
 }
 .reviews .h2-title {
   max-width: 900px;
@@ -2423,7 +2529,7 @@ section {
 @media screen and (max-width: 479px) {
   .reviews__slide {
     grid-template-columns: 1fr;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
   }
 }
 .reviews__left {
@@ -2544,7 +2650,12 @@ section {
 }
 
 .scores {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 479px) {
+  .scores {
+    margin-bottom: 56px;
+  }
 }
 .scores__columns {
   display: grid;
@@ -2608,6 +2719,12 @@ section {
 
 .videos {
   overflow: hidden;
+  margin-bottom: 112px;
+}
+@media screen and (max-width: 479px) {
+  .videos {
+    margin-bottom: 56px;
+  }
 }
 .videos__swiper {
   padding-top: 100px;
@@ -2703,6 +2820,12 @@ section {
 
 .mentors {
   overflow: hidden;
+  margin-bottom: 112px;
+}
+@media screen and (max-width: 479px) {
+  .mentors {
+    margin-bottom: 56px;
+  }
 }
 @media screen and (max-width: 959px) {
   .mentors .pagination__buttons {
@@ -2715,6 +2838,7 @@ section {
   }
 }
 .mentors .h2-title {
+  margin-bottom: 48px;
   max-width: 1070px;
 }
 @media screen and (max-width: 1199px) {
@@ -2745,7 +2869,7 @@ section {
 .mentors__slide {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 432px;
 }
 @media screen and (max-width: 639px) {
   .mentors__slide {
@@ -2769,9 +2893,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
-  padding: 20px;
-  margin-bottom: 40px;
+  gap: 16px;
+  padding: 22px;
 }
 @media screen and (max-width: 639px) {
   .mentors__content {
@@ -2806,11 +2929,14 @@ section {
   }
 }
 
+.media {
+  margin-bottom: 112px;
+}
 .media .h2-title {
   max-width: unset;
   font-size: 48px;
   line-height: 43px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 @media screen and (max-width: 959px) {
   .media .h2-title {
@@ -2827,6 +2953,7 @@ section {
 @media screen and (max-width: 439px) {
   .media .h2-title {
     line-height: 29px;
+    margin-bottom: 24px;
   }
 }
 .media .all-link {
@@ -2862,8 +2989,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10px 10px 50px 10px;
-  gap: 20px;
+  padding: 16px 50px 60px 16px;
 }
 @media screen and (max-width: 959px) {
   .media__card {
@@ -2911,6 +3037,7 @@ section {
 .media__hashtag {
   font-size: 24px;
   line-height: 29px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 1199px) {
   .media__hashtag {
@@ -2928,6 +3055,7 @@ section {
   color: #181818;
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 1199px) {
   .media__text {
@@ -2961,8 +3089,17 @@ section {
   transition: 0.2s;
 }
 
+.smi {
+  margin-bottom: 112px;
+}
+@media screen and (max-width: 479px) {
+  .smi {
+    margin-bottom: 56px;
+  }
+}
 .smi .h2-title {
   font-size: 48px;
+  margin-bottom: 48px;
 }
 @media screen and (max-width: 959px) {
   .smi .h2-title {
@@ -2979,7 +3116,7 @@ section {
 .smi__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 24px;
 }
 @media screen and (max-width: 959px) {
   .smi__cards {
@@ -2994,6 +3131,7 @@ section {
 @media screen and (max-width: 479px) {
   .smi__cards {
     grid-template-columns: 1fr;
+    gap: 48px;
   }
 }
 .smi__card {
@@ -3014,6 +3152,7 @@ section {
     max-height: 50px;
     min-height: unset;
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 .smi__logo {
@@ -3035,7 +3174,7 @@ section {
 .smi__text {
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 @media screen and (max-width: 1199px) {
   .smi__text {
@@ -3045,6 +3184,7 @@ section {
 @media screen and (max-width: 639px) {
   .smi__text {
     font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 .smi__link {
@@ -3070,4 +3210,4 @@ section {
 .smi__link:hover {
   opacity: 0.7;
   transition: 0.2s;
-}/*# sourceMappingURL=index.css.map */
+}

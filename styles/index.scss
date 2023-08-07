@@ -1737,9 +1737,6 @@
 			height: 30px;
 		}
 	}
-
-	&__button_prev {
-	}
 	&__button_next {
 		transform: rotate(180deg);
 	}
@@ -2126,9 +2123,8 @@
 		}
 
 		.marquee {
-			height: 100px;
 			width: 160px;
-			object-fit: cover;
+			object-fit: contain;
 			object-position: center;
 
 			@media screen and (max-width: 639px) {
@@ -2181,7 +2177,7 @@
 	@media screen and (max-width: 479px) {
 		padding-bottom: 60px;
 		padding-top: 28px;
-    margin-bottom: 56px;
+		margin-bottom: 56px;
 	}
 
 	.h2-title {
@@ -2319,7 +2315,7 @@
 			top: 210px;
 		}
 		@media screen and (max-width: 479px) {
-      left: 259px;
+			left: 259px;
 			top: 130px;
 		}
 	}
@@ -2447,9 +2443,9 @@
 
 .reviews {
 	overflow: hidden;
-  margin-bottom: 80px;
+	margin-bottom: 80px;
 
-  @media screen and (max-width: 479px) {
+	@media screen and (max-width: 479px) {
 		margin-bottom: 56px;
 	}
 
@@ -2604,7 +2600,7 @@
 
 .scores {
 	margin-bottom: 80px;
-  @media screen and (max-width: 479px) {
+	@media screen and (max-width: 479px) {
 		margin-bottom: 56px;
 	}
 
@@ -2671,7 +2667,7 @@
 .videos {
 	overflow: hidden;
 	margin-bottom: 112px;
-  @media screen and (max-width: 479px) {
+	@media screen and (max-width: 479px) {
 		margin-bottom: 56px;
 	}
 
@@ -2778,7 +2774,7 @@
 .mentors {
 	overflow: hidden;
 	margin-bottom: 112px;
-  @media screen and (max-width: 479px) {
+	@media screen and (max-width: 479px) {
 		margin-bottom: 56px;
 	}
 
@@ -2902,7 +2898,7 @@
 
 		@media screen and (max-width: 439px) {
 			line-height: 29px;
-      margin-bottom: 24px;
+			margin-bottom: 24px;
 		}
 	}
 
@@ -3037,9 +3033,9 @@
 .smi {
 	margin-bottom: 112px;
 
-  @media screen and (max-width: 479px) {
-    margin-bottom: 56px;
-  }
+	@media screen and (max-width: 479px) {
+		margin-bottom: 56px;
+	}
 
 	.h2-title {
 		font-size: 48px;
@@ -3069,7 +3065,7 @@
 		}
 		@media screen and (max-width: 479px) {
 			grid-template-columns: 1fr;
-      gap: 48px;
+			gap: 48px;
 		}
 	}
 
@@ -3090,7 +3086,7 @@
 			max-height: 50px;
 			min-height: unset;
 			width: 100%;
-      margin-bottom: 20px;
+			margin-bottom: 20px;
 		}
 	}
 	&__logo {
@@ -3117,7 +3113,7 @@
 
 		@media screen and (max-width: 639px) {
 			font-size: 16px;
-      margin-bottom: 20px;
+			margin-bottom: 20px;
 		}
 	}
 	&__link {

@@ -2148,10 +2148,9 @@
   }
 }
 .carrier__marquee .marquee {
-  height: 100px;
   width: 160px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
      object-position: center;
 }

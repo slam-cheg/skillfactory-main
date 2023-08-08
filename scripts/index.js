@@ -22,7 +22,9 @@ const employerReviewsSwiper = new Swiper(".employer-reviews__swiper", {
 	},
 	spaceBetween: 44,
 	slideToClickedSlide: true,
-
+	mousewheel: {
+		invert: false,
+	  },
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
@@ -60,7 +62,9 @@ if (window.outerWidth > 479) {
 		spaceBetween: 24,
 		slidesPerView: 3,
 		slideToClickedSlide: true,
-
+		mousewheel: {
+			invert: false,
+		  },
 		breakpoints: {
 			480: {
 				slidesPerView: 1.24,
@@ -83,6 +87,9 @@ const reviewsSwiper = new Swiper(".reviews__swiper", {
 	},
 	spaceBetween: 44,
 	slideToClickedSlide: true,
+	mousewheel: {
+		invert: false,
+	  },
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
@@ -118,7 +125,9 @@ const videosSwiper = new Swiper(".videos__swiper", {
 	},
 	spaceBetween: 44,
 	slideToClickedSlide: false,
-
+	mousewheel: {
+		invert: false,
+	  },
 	breakpoints: {
 		320: {
 			slidesPerView: 1.2,
@@ -144,7 +153,9 @@ const mentorsSwiper = new Swiper(".mentors__swiper", {
 		prevEl: "#mentors-next-btn",
 	},
 	spaceBetween: 24,
-
+	mousewheel: {
+		invert: false,
+	  },
 	slideToClickedSlide: true,
 	breakpoints: {
 		480: {

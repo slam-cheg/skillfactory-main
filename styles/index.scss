@@ -805,7 +805,7 @@
 		}
 	}
 
-	#UXSPR {
+	#UXSPRO {
 		background: #fdcbd6;
 		transition: 0.1s;
 
@@ -1665,6 +1665,7 @@
 	&__logo {
 		margin-bottom: 30px;
 		max-height: 87px;
+		max-width: 250px;
 
 		@media screen and (max-width: 959px) {
 			margin-bottom: 20px;

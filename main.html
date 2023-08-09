@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Skillfactory - main</title>
 		<link rel="stylesheet" href="./styles/index.css" />
+		<link rel="stylesheet" href="./styles/modified.css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	</head>
 	<body>
@@ -29,83 +30,66 @@
 							<span class="main__burger-line">&nbsp;</span>
 						</a>
 					</div>
-					<div class="columns">
-						<div class="column">
-							<h1 class="title">Научитесь работать в&nbsp;IT</h1>
-							<ul class="list">
-								<li class="list-item">&mdash;&nbsp;Практика на реальных проектах</li>
-								<li class="list-item">&mdash;&nbsp;Помощь с&nbsp;трудоустройством</li>
-							</ul>
-							<div class="directions">
-								<p class="directions__title">Выберите направление</p>
-								<ul class="directions__list">
-									<li>
-										<a target="_blank" href="/courses/programmirovanie" class="directions__list-link">
-											<span>Программирование</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-												<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="/courses/data-science" class="directions__list-link">
-											<span>Data Science</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-												<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="/courses/analitika-dannyh" class="directions__list-link">
-											<span>Аналитика данных</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-												<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="/courses/testirovanie" class="directions__list-link">
-											<span>Тестирование</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-												<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="/vyssheye-obrazovaniye?_ga=2.141819569.2076350999.1690653443-215108554.1686124528" class="directions__list-link">
-											<span>Высшее образование</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-												<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="/courses/design" class="directions__list-link">
-											<span>Дизайн</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-												<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
-											</svg>
-										</a>
-									</li>
-									<li>
-										<a target="_blank" href="/courses/management-i-upravlenie" class="directions__list-link">
-											<span>Менеджмент</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-												<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
-											</svg>
-										</a>
-									</li>
-									<li class="">
-										<a target="_blank" href="/courses" class="directions__list-link directions__list-link_green"><span>Все курсы</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="column">
-							<div class="main__pic">
-								<img src="https://storage.yandexcloud.net/sf-wallaper-bucket/mainpage/Main.webp" alt="skillfactory - IT курсы" />
-								<svg xmlns="http://www.w3.org/2000/svg" width="495" height="515" viewBox="0 0 497 517" fill="none">
-									<path
-										d="M378.239 94.1057H259.382C257.172 94.1057 255.382 92.3148 255.382 90.1057V68.9841C255.382 66.7749 253.591 64.9841 251.382 64.9841H5C2.79086 64.9841 1 66.7749 1 68.9841L1.00014 482C1.00014 484.209 2.791 486 5.00014 486H224.33C226.539 486 228.33 487.791 228.33 490V512C228.33 514.209 230.121 516 232.33 516H492C494.209 516 496 514.209 496 512L496 5C496 2.79086 494.209 1 492 1H386.239C384.029 1 382.239 2.79086 382.239 5V90.1057C382.239 92.3148 380.448 94.1057 378.239 94.1057Z"
-										stroke="white"
-										stroke-width="2"
-									></path>
-								</svg>
-							</div>
-						</div>
+					<div class="main__title-wrapper">
+						<p class="main__label">Онлайн-школа IT-профессий</p>
+						<h1 class="title title__large">Учим тех, кого берут на&nbsp;работу</h1>
+					</div>
+					<div class="directions">
+						<p class="directions__title">Выберите направление</p>
+						<ul class="directions__list">
+							<li>
+								<a target="_blank" href="/courses/programmirovanie" class="directions__list-link">
+									<span>Программирование</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="/courses/data-science" class="directions__list-link">
+									<span>Data Science</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="/courses/analitika-dannyh" class="directions__list-link">
+									<span>Аналитика данных</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="/courses/testirovanie" class="directions__list-link">
+									<span>Тестирование</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="/vyssheye-obrazovaniye?_ga=2.141819569.2076350999.1690653443-215108554.1686124528" class="directions__list-link">
+									<span>Высшее образование</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="/courses/design" class="directions__list-link">
+									<span>Дизайн</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a target="_blank" href="/courses/management-i-upravlenie" class="directions__list-link">
+									<span>Менеджмент</span>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+										<path d="M22 20.938V-3.24914e-08L0.901643 -1.94998e-07L0.901643 2.74731L17.4099 2.74731L0 20.0425L1.97052 22L19.1916 4.89247V20.938L22 20.938Z" fill="#B5E916"></path>
+									</svg>
+								</a>
+							</li>
+							<li class="">
+								<a target="_blank" href="/courses" class="directions__list-link directions__list-link_green"><span>Все курсы</span></a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -353,6 +337,22 @@
 					</li>
 				</ul>
 				<a target="_blank" href="/courses" class="all-link"><span>Смотреть все профессии</span>&nbsp;→</a>
+			</div>
+		</section>
+		<section class="proforientation">
+			<div class="inner-wrapper">
+				<div class="proforientation__card">
+					<div class="svg-container">
+						<svg xmlns="http://www.w3.org/2000/svg" width="618" height="317" viewBox="0 0 618 317" fill="none">
+							<path
+								d="M0.292893 308.293C-0.0976311 308.683 -0.0976311 309.317 0.292893 309.707L6.65685 316.071C7.04738 316.462 7.68054 316.462 8.07107 316.071C8.46159 315.681 8.46159 315.047 8.07107 314.657L2.41421 309L8.07107 303.343C8.46159 302.953 8.46159 302.319 8.07107 301.929C7.68054 301.538 7.04738 301.538 6.65685 301.929L0.292893 308.293ZM616 -33V205.042H618V-33H616ZM613 208.042H489.5V210.042H613V208.042ZM484.5 213.042V259.5H486.5V213.042H484.5ZM489.5 264.5H613V262.5H489.5V264.5ZM616 267.5V305H618V267.5H616ZM613 308H324.785V310H613V308ZM321.785 305V235.092H319.785V305H321.785ZM316.785 230.092H223.712V232.092H316.785V230.092ZM218.712 235.092V305H220.712V235.092H218.712ZM215.712 308H1V310H215.712V308ZM218.712 305C218.712 306.657 217.369 308 215.712 308V310C218.474 310 220.712 307.761 220.712 305H218.712ZM223.712 230.092C220.951 230.092 218.712 232.331 218.712 235.092H220.712C220.712 233.435 222.055 232.092 223.712 232.092V230.092ZM321.785 235.092C321.785 232.331 319.547 230.092 316.785 230.092V232.092C318.442 232.092 319.785 233.435 319.785 235.092H321.785ZM324.785 308C323.128 308 321.785 306.657 321.785 305H319.785C319.785 307.761 322.024 310 324.785 310V308ZM616 305C616 306.657 614.657 308 613 308V310C615.761 310 618 307.761 618 305H616ZM613 264.5C614.657 264.5 616 265.843 616 267.5H618C618 264.739 615.761 262.5 613 262.5V264.5ZM484.5 259.5C484.5 262.261 486.739 264.5 489.5 264.5V262.5C487.843 262.5 486.5 261.157 486.5 259.5H484.5ZM489.5 208.042C486.739 208.042 484.5 210.281 484.5 213.042H486.5C486.5 211.385 487.843 210.042 489.5 210.042V208.042ZM616 205.042C616 206.699 614.657 208.042 613 208.042V210.042C615.761 210.042 618 207.803 618 205.042H616Z"
+								fill="#043933"
+							/>
+						</svg>
+					</div>
+					<h2 class="h2-title">Не&nbsp;знаете какая профессия вам подойдет? Регистрируйтесь на&nbsp;бесплатный профориентационный проект &laquo;IT-рентген&raquo;</h2>
+					<a href="https://free.skillfactory.ru/itrentgen?_ga=2.167027710.1984456130.1691573449-215108554.1686124528" target="_blank" class="proforientation__link">Участвовать бесплатно</a>
+				</div>
 			</div>
 		</section>
 		<section class="warranty">

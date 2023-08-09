@@ -7,11 +7,17 @@ const refundTooltipBtn = document.querySelector("#refund");
 const burgerMenuBtn = document.querySelector(".main__burger");
 
 burgerMenuBtn.addEventListener("click", openMobileMenu);
-jobTooltipBtn.addEventListener("click", () => {
+jobTooltipBtn.addEventListener("mouseover", () => {
 	openTooltip(jobTooltip);
 });
-refundTooltipBtn.addEventListener("click", () => {
+jobTooltipBtn.addEventListener("mouseout", () => {
+	closeTooltip(jobTooltip);
+});
+refundTooltipBtn.addEventListener("mouseover", () => {
 	openTooltip(refundTooltip);
+});
+refundTooltip.addEventListener("mouseout", () => {
+	closeTooltip(refundTooltip);
 });
 
 const employerReviewsSwiper = new Swiper(".employer-reviews__swiper", {
@@ -24,7 +30,8 @@ const employerReviewsSwiper = new Swiper(".employer-reviews__swiper", {
 	slideToClickedSlide: true,
 	mousewheel: {
 		invert: false,
-	  },
+		forceToAxis: true,
+	},
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
@@ -64,7 +71,7 @@ if (window.outerWidth > 479) {
 		slideToClickedSlide: true,
 		mousewheel: {
 			invert: false,
-		  },
+		},
 		breakpoints: {
 			480: {
 				slidesPerView: 1.24,
@@ -89,7 +96,7 @@ const reviewsSwiper = new Swiper(".reviews__swiper", {
 	slideToClickedSlide: true,
 	mousewheel: {
 		invert: false,
-	  },
+	},
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
@@ -127,7 +134,7 @@ const videosSwiper = new Swiper(".videos__swiper", {
 	slideToClickedSlide: false,
 	mousewheel: {
 		invert: false,
-	  },
+	},
 	breakpoints: {
 		320: {
 			slidesPerView: 1.2,
@@ -155,7 +162,7 @@ const mentorsSwiper = new Swiper(".mentors__swiper", {
 	spaceBetween: 24,
 	mousewheel: {
 		invert: false,
-	  },
+	},
 	slideToClickedSlide: true,
 	breakpoints: {
 		480: {
@@ -213,7 +220,7 @@ function openMobileMenu() {
 	}, 200);
 }
 
-function closeMobileMenuByOverlay (event) {
+function closeMobileMenuByOverlay(event) {
 	if (event.type === "click") {
 		if (event.target !== document.querySelector(".main__burger")) {
 			closeMobileMenu(document.querySelector(".main__burger_clicked"));
@@ -221,7 +228,7 @@ function closeMobileMenuByOverlay (event) {
 	}
 }
 
-function closeMobileMenu () {
+function closeMobileMenu() {
 	burgerMenuBtn.classList.remove("main__burger_clicked");
 	window.removeEventListener("click", closeMobileMenuByOverlay);
 }

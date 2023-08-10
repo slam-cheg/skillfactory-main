@@ -96,7 +96,12 @@
 }
 
 .proforientation {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
+}
+@media screen and (max-width: 479px) {
+  .proforientation {
+    margin-bottom: 75px;
+  }
 }
 .proforientation .h2-title {
   font-size: 48px;
@@ -144,7 +149,7 @@
   }
 }
 .proforientation__link {
-  color: #fffaed;
+  color: #fffaed !important;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;

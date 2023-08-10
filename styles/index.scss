@@ -63,11 +63,11 @@
 }
 
 .main {
-	margin-bottom: 90px;
+	margin-bottom: 110px;
 	overflow: hidden;
 
 	@media screen and (max-width: 479px) {
-		margin-bottom: 38px;
+		margin-bottom: 75px;
 	}
 
 	&__header {
@@ -449,10 +449,10 @@
 }
 
 .courses {
-	margin-bottom: 80px;
+	margin-bottom: 110px;
 
 	@media screen and (max-width: 479px) {
-		margin-bottom: 56px;
+		margin-bottom: 0px;
 	}
 
 	.cards {
@@ -1077,13 +1077,13 @@
 }
 
 .warranty {
-	margin-bottom: 80px;
+	margin-bottom: 110px;
 	@media screen and (max-width: 639px) {
 		overflow: hidden;
 	}
 	@media screen and (max-width: 479px) {
-		padding-top: 56px;
-		margin-bottom: 56px;
+		padding-top: 75px;
+		margin-bottom: 75px;
 	}
 
 	&__bg {
@@ -1095,7 +1095,7 @@
 			padding: 20px 20px 40px 20px;
 		}
 		@media screen and (max-width: 479px) {
-			padding: 10px 10px 40px 10px;
+			padding: 20px 10px 40px 10px;
 		}
 	}
 
@@ -1398,10 +1398,10 @@
 }
 
 .business {
-	margin-bottom: 112px;
+	margin-bottom: 110px;
 
 	@media screen and (max-width: 479px) {
-		margin-bottom: 80px;
+		margin-bottom: 75px;
 	}
 
 	.h2-title {
@@ -1599,11 +1599,11 @@
 
 .employer-reviews {
 	overflow: hidden;
-	margin-bottom: 100px;
+	margin-bottom: 110px;
 	padding-top: 5px;
 
 	@media screen and (max-width: 479px) {
-		margin-bottom: 80px;
+		margin-bottom: 75px;
 	}
 
 	.h2-title {
@@ -1752,10 +1752,10 @@
 .free-materials {
 	overflow: hidden;
 	padding-bottom: 4px;
-	margin-bottom: 112px;
+	margin-bottom: 110px;
 
 	@media screen and (max-width: 479px) {
-		margin-bottom: 56px;
+		margin-bottom: 75px;
 	}
 
 	.pagination__buttons {
@@ -2175,7 +2175,7 @@
 	background: #a2c1c4;
 	padding-bottom: 108px;
 	padding-top: 40px;
-	margin-bottom: 112px;
+	margin-bottom: 110px;
 
 	@media screen and (max-width: 479px) {
 		margin-top: -1px;
@@ -2184,7 +2184,7 @@
 	@media screen and (max-width: 479px) {
 		padding-bottom: 60px;
 		padding-top: 28px;
-		margin-bottom: 56px;
+		margin-bottom: 75px;
 	}
 
 	.h2-title {
@@ -2450,7 +2450,7 @@
 
 .reviews {
 	overflow: hidden;
-	margin-bottom: 80px;
+	margin-bottom: 110px;
 
 	@media screen and (max-width: 479px) {
 		margin-bottom: 56px;
@@ -2458,7 +2458,7 @@
 
 	.h2-title {
 		max-width: 900px;
-		margin-bottom: 60px;
+		margin-bottom: 75px;
 
 		@media screen and (max-width: 639px) {
 			margin-bottom: 80px;
@@ -2606,9 +2606,10 @@
 }
 
 .scores {
-	margin-bottom: 80px;
+	margin-bottom: 110px;
+
 	@media screen and (max-width: 479px) {
-		margin-bottom: 56px;
+		margin-bottom: 75px;
 	}
 
 	&__columns {
@@ -2673,9 +2674,9 @@
 
 .videos {
 	overflow: hidden;
-	margin-bottom: 112px;
+	margin-bottom: 110px;
 	@media screen and (max-width: 479px) {
-		margin-bottom: 56px;
+		margin-bottom: 75px;
 	}
 
 	&__swiper {
@@ -2780,9 +2781,9 @@
 
 .mentors {
 	overflow: hidden;
-	margin-bottom: 112px;
+	margin-bottom: 110px;
 	@media screen and (max-width: 479px) {
-		margin-bottom: 56px;
+		margin-bottom: 75px;
 	}
 
 	.pagination__buttons {
@@ -2885,7 +2886,11 @@
 }
 
 .media {
-	margin-bottom: 112px;
+	margin-bottom: 110px;
+
+	@media screen and (max-width: 479px) {
+		margin-bottom: 75px;
+	}
 
 	.h2-title {
 		max-width: unset;
@@ -3038,10 +3043,10 @@
 }
 
 .smi {
-	margin-bottom: 112px;
+	margin-bottom: 110px;
 
 	@media screen and (max-width: 479px) {
-		margin-bottom: 56px;
+		margin-bottom: 75px;
 	}
 
 	.h2-title {

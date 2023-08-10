@@ -91,12 +91,12 @@
 }
 
 .main {
-  margin-bottom: 90px;
+  margin-bottom: 110px;
   overflow: hidden;
 }
 @media screen and (max-width: 479px) {
   .main {
-    margin-bottom: 38px;
+    margin-bottom: 75px;
   }
 }
 .main__header {
@@ -488,11 +488,11 @@
 }
 
 .courses {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 479px) {
   .courses {
-    margin-bottom: 56px;
+    margin-bottom: 0px;
   }
 }
 .courses .cards {
@@ -1078,7 +1078,7 @@
 }
 
 .warranty {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 639px) {
   .warranty {
@@ -1087,8 +1087,8 @@
 }
 @media screen and (max-width: 479px) {
   .warranty {
-    padding-top: 56px;
-    margin-bottom: 56px;
+    padding-top: 75px;
+    margin-bottom: 75px;
   }
 }
 .warranty__bg {
@@ -1103,7 +1103,7 @@
 }
 @media screen and (max-width: 479px) {
   .warranty__bg {
-    padding: 10px 10px 40px 10px;
+    padding: 20px 10px 40px 10px;
   }
 }
 .warranty__top {
@@ -1425,11 +1425,11 @@
 }
 
 .business {
-  margin-bottom: 112px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 479px) {
   .business {
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 }
 .business .h2-title {
@@ -1623,12 +1623,12 @@
 
 .employer-reviews {
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
   padding-top: 5px;
 }
 @media screen and (max-width: 479px) {
   .employer-reviews {
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 }
 .employer-reviews .h2-title {
@@ -1782,11 +1782,11 @@
 .free-materials {
   overflow: hidden;
   padding-bottom: 4px;
-  margin-bottom: 112px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 479px) {
   .free-materials {
-    margin-bottom: 56px;
+    margin-bottom: 75px;
   }
 }
 @media screen and (max-width: 959px) {
@@ -2200,7 +2200,7 @@
   background: #a2c1c4;
   padding-bottom: 108px;
   padding-top: 40px;
-  margin-bottom: 112px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 479px) {
   .community {
@@ -2211,7 +2211,7 @@
   .community {
     padding-bottom: 60px;
     padding-top: 28px;
-    margin-bottom: 56px;
+    margin-bottom: 75px;
   }
 }
 .community .h2-title {
@@ -2497,7 +2497,7 @@
 
 .reviews {
   overflow: hidden;
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 479px) {
   .reviews {
@@ -2506,7 +2506,7 @@
 }
 .reviews .h2-title {
   max-width: 900px;
-  margin-bottom: 60px;
+  margin-bottom: 75px;
 }
 @media screen and (max-width: 639px) {
   .reviews .h2-title {
@@ -2655,11 +2655,11 @@
 }
 
 .scores {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 479px) {
   .scores {
-    margin-bottom: 56px;
+    margin-bottom: 75px;
   }
 }
 .scores__columns {
@@ -2724,11 +2724,11 @@
 
 .videos {
   overflow: hidden;
-  margin-bottom: 112px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 479px) {
   .videos {
-    margin-bottom: 56px;
+    margin-bottom: 75px;
   }
 }
 .videos__swiper {
@@ -2825,11 +2825,11 @@
 
 .mentors {
   overflow: hidden;
-  margin-bottom: 112px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 479px) {
   .mentors {
-    margin-bottom: 56px;
+    margin-bottom: 75px;
   }
 }
 @media screen and (max-width: 959px) {
@@ -2935,7 +2935,12 @@
 }
 
 .media {
-  margin-bottom: 112px;
+  margin-bottom: 110px;
+}
+@media screen and (max-width: 479px) {
+  .media {
+    margin-bottom: 75px;
+  }
 }
 .media .h2-title {
   max-width: unset;
@@ -3095,11 +3100,11 @@
 }
 
 .smi {
-  margin-bottom: 112px;
+  margin-bottom: 110px;
 }
 @media screen and (max-width: 479px) {
   .smi {
-    margin-bottom: 56px;
+    margin-bottom: 75px;
   }
 }
 .smi .h2-title {

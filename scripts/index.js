@@ -1,24 +1,24 @@
 const iframeLayout = `<iframe class="videos__iframe" width="100%" height="100%" frameborder="0" allowfullscreen="" src="" allow="autoplay"></iframe>`;
 const iframeWrappers = document.querySelectorAll(".videos__iframe-wrapper");
-const jobTooltip = document.querySelector("#tooltip-job");
-const refundTooltip = document.querySelector("#tooltip-refund");
-const jobTooltipBtn = document.querySelector("#internship");
-const refundTooltipBtn = document.querySelector("#refund");
+// const jobTooltip = document.querySelector("#tooltip-job");
+// const refundTooltip = document.querySelector("#tooltip-refund");
+// const jobTooltipBtn = document.querySelector("#internship");
+// const refundTooltipBtn = document.querySelector("#refund");
 const burgerMenuBtn = document.querySelector(".main__burger");
 
 burgerMenuBtn.addEventListener("click", openMobileMenu);
-jobTooltipBtn.addEventListener("mouseover", () => {
-	openTooltip(jobTooltip);
-});
-jobTooltipBtn.addEventListener("mouseout", () => {
-	closeTooltip(jobTooltip);
-});
-refundTooltipBtn.addEventListener("mouseover", () => {
-	openTooltip(refundTooltip);
-});
-refundTooltip.addEventListener("mouseout", () => {
-	closeTooltip(refundTooltip);
-});
+// jobTooltipBtn.addEventListener("mouseover", () => {
+// 	openTooltip(jobTooltip);
+// });
+// jobTooltipBtn.addEventListener("mouseout", () => {
+// 	closeTooltip(jobTooltip);
+// });
+// refundTooltipBtn.addEventListener("mouseover", () => {
+// 	openTooltip(refundTooltip);
+// });
+// refundTooltip.addEventListener("mouseout", () => {
+// 	closeTooltip(refundTooltip);
+// });
 
 const employerReviewsSwiper = new Swiper(".employer-reviews__swiper", {
 	loop: false,
@@ -193,25 +193,25 @@ iframeWrappers.forEach((wrapper) => {
 	});
 });
 
-function openTooltip(tooltip) {
-	tooltip.classList.add("warranty__tooltip_visible");
-	setTimeout(() => {
-		window.addEventListener("click", closeTooltipByOverlay);
-	}, 500);
-}
+// function openTooltip(tooltip) {
+// 	tooltip.classList.add("warranty__tooltip_visible");
+// 	setTimeout(() => {
+// 		window.addEventListener("click", closeTooltipByOverlay);
+// 	}, 500);
+// }
 
-function closeTooltip(tooltip) {
-	tooltip.classList.remove("warranty__tooltip_visible");
-	window.removeEventListener("click", closeTooltipByOverlay);
-}
+// function closeTooltip(tooltip) {
+// 	tooltip.classList.remove("warranty__tooltip_visible");
+// 	window.removeEventListener("click", closeTooltipByOverlay);
+// }
 
-function closeTooltipByOverlay(event) {
-	if (event.type === "click") {
-		if (event.target !== document.querySelector(".warranty__tooltip")) {
-			closeTooltip(document.querySelector(".warranty__tooltip_visible"));
-		}
-	}
-}
+// function closeTooltipByOverlay(event) {
+// 	if (event.type === "click") {
+// 		if (event.target !== document.querySelector(".warranty__tooltip")) {
+// 			closeTooltip(document.querySelector(".warranty__tooltip_visible"));
+// 		}
+// 	}
+// }
 
 function openMobileMenu() {
 	burgerMenuBtn.classList.add("main__burger_clicked");

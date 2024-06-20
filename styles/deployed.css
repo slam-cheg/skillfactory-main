@@ -2786,8 +2786,9 @@
 	width: 60px;
 	height: 60px;
 	background-repeat: no-repeat;
-	background-size: contain;
+    background-size: cover;
 	background-position: center;
+    border-radius: 70px;
 }
 
 @media screen and (max-width: 479px) {
@@ -2798,7 +2799,7 @@
 }
 
 .community #photo-one {
-	background-image: url(https://thumb.tildacdn.com/tild6265-3133-4037-b830-646234303566/-/cover/72x72/center/center/-/format/webp/Frame_1321314344.png);
+	background-image: url(https://storage.yandexcloud.net/sf-wallaper-bucket/images/main-page/1.webp);
 	top: -72px;
 	left: 90px;
 }
@@ -2837,7 +2838,7 @@
 }
 
 .community #photo-three {
-	background-image: url(https://thumb.tildacdn.com/tild6331-3962-4364-b030-323061656334/-/cover/72x72/center/center/-/format/webp/Frame_1321314342.png);
+	background-image: url(https://storage.yandexcloud.net/sf-wallaper-bucket/images/main-page/3.webp);
 	top: 140px;
 	left: 0;
 }
@@ -2881,7 +2882,7 @@
 }
 
 .community #photo-five {
-	background-image: url(https://thumb.tildacdn.com/tild6137-6563-4665-b935-663031663233/-/cover/72x72/center/center/-/format/webp/Frame_1321314343.png);
+	background-image: url(https://storage.yandexcloud.net/sf-wallaper-bucket/images/main-page/5.webp);
 	top: 160px;
 	left: 340px;
 }
@@ -2908,7 +2909,7 @@
 }
 
 .community #photo-six {
-	background-image: url(https://thumb.tildacdn.com/tild3934-3861-4637-a661-663366656665/-/cover/72x72/center/center/-/format/webp/Frame_1321314341.png);
+	background-image: url(https://storage.yandexcloud.net/sf-wallaper-bucket/images/main-page/6.webp);
 	top: 250px;
 	left: 70px;
 }
@@ -2934,7 +2935,7 @@
 }
 
 .community #photo-seven {
-	background-image: url(https://thumb.tildacdn.com/tild3062-3039-4830-b530-333162336666/-/cover/72x72/center/center/-/format/webp/Frame_1321314338.png);
+	background-image: url(https://storage.yandexcloud.net/sf-wallaper-bucket/images/main-page/7.webp);
 	top: 266px;
 	left: 230px;
 }

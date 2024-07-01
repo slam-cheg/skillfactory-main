@@ -2052,6 +2052,7 @@
 	background-color: #fffaed;
 	gap: 20px;
 	grid-template-columns: 1fr 1.6fr;
+	min-height: 428px;
 }
 
 @media screen and (max-width: 959px) {
@@ -2064,7 +2065,7 @@
 	.employer-reviews__slide {
 		grid-template-columns: 1fr;
 		padding: 10px 10px 30px 10px;
-		height: 518px;
+		min-height: 518px;
 	}
 }
 

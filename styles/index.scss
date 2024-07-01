@@ -1610,6 +1610,7 @@
 		background-color: #fffaed;
 		gap: 20px;
 		grid-template-columns: 1fr 1.6fr;
+		height: 428px;
 
 		@media screen and (max-width: 959px) {
 			grid-template-columns: 368px 0.9fr;
@@ -1618,7 +1619,6 @@
 		@media screen and (max-width: 479px) {
 			grid-template-columns: 1fr;
 			padding: 10px;
-			min-height: 425px;
 		}
 	}
 

@@ -1113,7 +1113,7 @@
   color: #181818;
   font-size: 48px;
   line-height: 0.9;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 42px;
   max-width: 700px;
 }
@@ -1627,6 +1627,7 @@
   background-color: #fffaed;
   gap: 20px;
   grid-template-columns: 1fr 1.6fr;
+  height: 428px;
 }
 @media screen and (max-width: 959px) {
   .employer-reviews__slide {
@@ -1637,7 +1638,6 @@
   .employer-reviews__slide {
     grid-template-columns: 1fr;
     padding: 10px;
-    min-height: 425px;
   }
 }
 .employer-reviews__left {
